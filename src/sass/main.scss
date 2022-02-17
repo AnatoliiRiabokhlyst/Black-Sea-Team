@@ -2,6 +2,19 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+@import './base/reset';
+@import './utils/variables';
+@import './utils/mixins';
+@import './base/common';
+@import './utils/hidden';
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+@import './components/container.scss';
+@import './components/btn';
+@import './layout/header-hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advatages';
+@import './layout/gallery';
+@import './layout/reviews';
+@import './layout/contacts';
+@import './layout/footer';
