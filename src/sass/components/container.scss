@@ -4,14 +4,10 @@
   padding-right: 20px;
   margin: 0 auto;
 
-  @include mob {
-    width: 480px;
-  }
-
   @include tab {
-    width: 768px;
+    width: 740px;
   }
   @include desk {
-    width: 1280px;
+    width: 1090px;
   }
 }
