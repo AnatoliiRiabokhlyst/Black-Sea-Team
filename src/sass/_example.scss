@@ -25,3 +25,33 @@
   background-size: cover;
   background-position: center;
 }
+
+.header {
+  background-color: #ffb8ca;
+  background-repeat: no-repeat;
+  background-position: center, center left calc(100% / 2 + 55px);
+  background-size: auto, 350px;
+  background-image: url(../images/header/ice-mob.png), url(../images/header/ellipse.svg);
+
+  animation: iceCream 3s linear infinite;
+
+  animation-delay: 2s;
+  @keyframes circle {
+    0% {
+      background-size: auto, 150px;
+    }
+    100% {
+      background-size: auto, 350px;
+    }
+  }
+  @keyframes iceCream {
+    0% {
+      background-position: top 100% center, center left calc(100% / 2 + 55px);
+      background-size: auto, 150px;
+    }
+    100% {
+      background-position: center, center left calc(100% / 2 + 55px);
+      background-size: auto, 350px;
+    }
+  }
+}
