@@ -1,0 +1,14 @@
+.main-btn {
+  font-family: inherit;
+  cursor: pointer;
+  @include font(14px, 400, 18px, 0.03em);
+  border-radius: 20px;
+  border: 0;
+  background-color: #ffffff;
+  transition: backgroun-color var(--transition);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    outline: none;
+  }
+}
