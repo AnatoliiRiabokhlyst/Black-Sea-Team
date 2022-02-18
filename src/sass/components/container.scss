@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @include mob {
+    width: 480px;
+  }
+
+  @include tab {
+    width: 768px;
+  }
+  @include desk {
+    width: 1280px;
+  }
+}
