@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Y5Mt":[function(require,module,exports) {
 "use strict";require("../src/sass/main.scss");
 },{"../src/sass/main.scss":"clu1"}]},{},["Y5Mt"], null)
-//# sourceMappingURL=/Black-Sea-Team/js.13f379af.js.map
+//# sourceMappingURL=/Black-Sea-Team/js.f79cfb69.js.map
