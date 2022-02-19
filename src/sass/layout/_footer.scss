@@ -1,0 +1,123 @@
+.foot-container {
+    margin-top: 113px;
+    
+    @include tab {
+        margin-top: 158px;
+        display: flex;
+        justify-content: space-between;
+    }
+    @include desk {
+        margin-top: 165px;
+    }
+}
+.foot-text {
+    width: 250px;
+    margin-bottom: 43px;
+    @include tab {
+        width: 50%;
+        margin-bottom: 91px;
+    }
+    @include desk {
+        margin-bottom: 97px;
+    }
+}
+.first-text {
+    text-align: left;
+   margin-bottom: 16px;
+}
+.second-text {
+    text-align: left;
+   
+}
+.foot-contakts {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.social-list {
+    display: flex;
+    justify-content: flex-end; 
+    margin-bottom: 42px;
+    @include tab {
+        margin-bottom: 46px;
+    }
+    @include desk {
+        margin-bottom: 50px;
+    }
+  }
+  .social-item {
+    & + & {
+      margin-left: 28px;
+    }
+    @include tab {
+        & + & {
+            margin-left: 30px;
+          }
+    }
+  }
+  .social-icon {
+    
+        width: 20px;
+        height: 20px;
+    }
+    
+  
+  .social-link {
+    width: 34px;
+    height: 34px;
+    background-color: var(--social-media-back);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color var(--transition);
+    &:hover,
+    &:focus {
+      background-color: var(--main-red);
+    }
+  }
+  .foot-tel-text {
+    font-family: DM Sans;
+      @include font(12px, 700, 22px, null);
+     color: var(--clear-black);
+      margin-left: auto;
+      margin-bottom: 43px;
+      @include tab {
+        @include font(14px, null, null, null);
+    }
+    @include desk {
+        @include font(16px, null, null, null);
+    }
+  }
+.tel-link {
+    color: var(--main-red);
+}
+  .foot-line {
+      color: var(--border-lines-grey);
+      height: 1px;
+      width: 100vw;
+      margin-bottom: 9px;
+      @include tab {
+        margin-bottom: 29px;
+    }
+    @include desk {
+        margin-bottom: 9px;
+    }
+  }
+  .foot-rights {
+      width: 50%;
+      @include font(14px, 700, 26px, null);
+      color: var(--copyright-grey);
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 10px;
+      @include tab {
+        width: 100%;
+        margin-bottom: 18px;
+    }  
+    @include desk {
+        margin-bottom: 9px;
+    }
+  }
