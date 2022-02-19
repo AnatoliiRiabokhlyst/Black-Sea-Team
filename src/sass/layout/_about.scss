@@ -1,0 +1,81 @@
+.about {
+  background-color: #fff5f6;
+  padding-top: 120px;
+}
+.conteiner {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+// .section-title {
+// }
+
+.label {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+}
+
+.about-title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-top: 15px;
+}
+
+.about-image {
+  margin-top: 26px;
+}
+
+.text-one {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #000000;
+  margin-top: 46px;
+}
+
+.text-too {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+  margin-top: 47px;
+  background-image: url('../images/about/bg-milk-mobile-1x.png');
+}
+
+.about-btn {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 37px;
+  padding-right: 56px;
+  margin-top: 17px;
+}
