@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/header/icecream-mob.svg":[["icecream-mob.92a7e57e.svg","Lpyi"],"Lpyi"],"./../images/header/ellipse.svg":[["ellipse.da0c5b22.svg","S104"],"S104"],"./../images/header/icecream-tab.svg":[["icecream-tab.16aa9a19.svg","U7FW"],"U7FW"],"./../images/header/ellipse-tab.svg":[["ellipse-tab.da0c5b22.svg","Gl8z"],"Gl8z"],"./../images/header/icecream-desk.svg":[["icecream-desk.e20a2aee.svg","aBHl"],"aBHl"],"./../images/header/ellipse-desk.svg":[["ellipse-desk.eae4ccd6.svg","SKIV"],"SKIV"],"./../images/about/bg-milk-mobile-1x.png":[["bg-milk-mobile-1x.95775e7e.png","JoZf"],"JoZf"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/Black-Sea-Team/src.c8462763.js.map
+//# sourceMappingURL=/Black-Sea-Team/src.2251223f.js.map
