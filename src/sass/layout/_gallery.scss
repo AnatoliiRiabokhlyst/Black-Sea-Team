@@ -1,5 +1,11 @@
 .gallery{
-    padding: 0 135px 0 135px;
+    padding: 0 38px 0 38px;
+    @include tab{
+        padding: 0 86px 0 86px;
+    }
+    @include desk{
+        padding: 0 135px 0 135px;
+    }
 }
 
 .gallery-list{
@@ -11,28 +17,63 @@
     grid-template-columns: repeat(7, 1fr); 
     grid-template-rows: auto; 
     gap: 5px 5px; 
-    height: 430px; 
 }
 
-.img-2 { grid-area: 1 / 2 / 4 / 3; }
-.img-3 { grid-area: 4 / 2 / 7 / 3; }
-.img-4 { grid-area: 1 / 3 / 5 / 5; }
-.img-5 { grid-area: 5 / 3 / 7 / 4; }
-.img-6 { grid-area: 1 / 5 / 4 / 6; }
-.img-7 { grid-area: 4 / 5 / 7 / 6; }
-.img-8 { grid-area: 1 / 6 / 4 / 7; }
-.img-9 { grid-area: 4 / 6 / 7 / 7; }
-.img-10 { grid-area: 1 / 7 / 7 / 8; }
-.img-1 { grid-area: 1 / 1 / 7 / 2; }
+// .img-1 { grid-area: 3 / 1 / 5 / 2; }
+// .img-2 { grid-area: 2 / 2 / 4 / 3; }
+// .img-3 { grid-area: 4 / 2 / 6 / 3; }
+// .img-10 { grid-area: 3 / 7 / 5 / 8; }
+// .img-8 { grid-area: 2 / 6 / 4 / 7; }
+// .img-9 { grid-area: 4 / 6 / 6 / 7; }
+// .img-6 { grid-area: 3 / 5 / 5 / 6; }
+// .img-7 { grid-area: 5 / 5 / 7 / 6; }
+// .img-4 { grid-area: 1 / 3 / 5 / 5; }
+// .img-5 { grid-area: 5 / 3 / 7 / 4; }
 
 .gallery-item{
     display: block;
-    border: 1px solid red;
-    background-color: teal;
-    width: 139px;
-    height: 139px;
+    &:hover img{
+        transform: scale(1.1);
+        box-shadow: 4px 7px 30px 0px rgba(0, 0, 0, 0.1);
+    }
+    &:nth-child(1){
+        grid-area: 3 / 1 / 5 / 2;
+    }
+    &:nth-child(2){
+        grid-area: 2 / 2 / 4 / 3; 
+    }
+    &:nth-child(3){
+        grid-area: 4 / 2 / 6 / 3; 
+    }
     &:nth-child(4){
-        width: 280px;
-        height: 280px;
+        grid-area: 1 / 3 / 5 / 5; 
+    }
+    &:nth-child(5){
+        grid-area: 5 / 3 / 7 / 4; 
+    }
+    &:nth-child(6){
+        grid-area: 3 / 5 / 5 / 6; 
+    }
+    &:nth-child(7){
+        grid-area: 5 / 5 / 7 / 6; 
+    }
+    &:nth-child(8){
+        grid-area: 2 / 6 / 4 / 7; 
+    }
+    &:nth-child(9){
+        grid-area: 4 / 6 / 6 / 7; 
+    }
+    &:nth-child(10){
+        grid-area: 3 / 7 / 5 / 8; 
+    }
+}
+.gallery-item .gallery-img{
+    transition: transform 250ms, box-shadow 250ms;
+    border-radius: 5px;
+    @include tab{
+    border-radius: 11px;
+    }
+    @include desk{
+    border-radius: 20px;
     }
 }
