@@ -1,0 +1,94 @@
+.header {
+  padding-top: 6px;
+
+  background-color: var(--light-pink-background);
+  background-repeat: no-repeat;
+  background-position: center, center left calc(100% / 2 + 55px);
+  background-size: auto, 350px;
+
+  background-image: url('../images/header/icecream-mob.svg'), url('../images/header/ellipse.svg');
+  @include desk {
+    padding: 37px 46px;
+  }
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top {
+  position: relative;
+}
+
+.header-logo {
+  width: 190px;
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+.nav-link {
+  @include font(null, 700, 1.31, null);
+  color: var(--clear-white);
+  transition: color var(--transition);
+  &:hover,
+  &:focus,
+  &.current {
+    color: var(--main-red);
+  }
+}
+
+.nav-item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.header-button {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  min-width: 160px;
+  padding: 15px 38px;
+  margin-left: 30px;
+
+  @include font(16px, 700, 21px, null);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #d41443;
+  border: none;
+  background: #fff;
+  border-radius: 22px;
+
+  transition: background-color var(--transition);
+}
+.header-title {
+  @include font(26px, 400, 30px, null);
+  font-family: Titan One;
+  text-transform: uppercase;
+  color: var(--clear-white);
+}
+.title-red {
+  color: var(--main-red);
+  font-size: 48px;
+  line-height: 96.5%;
+  text-transform: uppercase;
+}
+
+.draft {
+  width: 100%;
+  height: 250px;
+}
