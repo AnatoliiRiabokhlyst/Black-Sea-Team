@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/about/bg-milk-mobile-1x.png":[["bg-milk-mobile-1x.95775e7e.png","JoZf"],"JoZf"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/Black-Sea-Team/src.ee9cd908.js.map
+//# sourceMappingURL=/Black-Sea-Team/src.013e341f.js.map
