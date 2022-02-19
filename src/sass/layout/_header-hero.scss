@@ -1,0 +1,190 @@
+.header {
+  padding-top: 6px;
+  padding-bottom: 160px;
+  position: relative;
+
+  background-color: var(--light-pink-background);
+  background-repeat: no-repeat;
+  background-position: left calc(100% / 2 + 65px) bottom, center left calc(100% / 2 + 55px);
+  background-size: auto, 350px;
+
+  background-image: url('../images/header/icecream-mob.svg'), url('../images/header/ellipse.svg');
+  @include tab {
+    padding: 37px 34px 160px 34px;
+    background-image: url('../images/header/icecream-tab.svg'),
+      url('../images/header/ellipse-tab.svg');
+  }
+  @include desk {
+    padding: 37px 115px 292px 46px;
+    background-size: auto, 540px;
+    background-image: url('../images/header/icecream-desk.svg'),
+      url('../images/header/ellipse-desk.svg');
+  }
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top {
+  position: relative;
+}
+
+.header-logo {
+  width: 190px;
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+.nav-link {
+  @include font(null, 700, 1.31, null);
+  color: var(--clear-white);
+  transition: color var(--transition);
+  &:hover,
+  &:focus,
+  &.current {
+    color: var(--main-red);
+  }
+}
+
+.nav-item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+.button-container {
+  padding-top: 15px;
+  @include tab {
+    padding-top: 0;
+    display: flex;
+  }
+}
+
+.header-button {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  display: block;
+  padding: 12px 37px;
+  margin-left: 30px;
+  @include font(16px, 700, 21px, null);
+
+  color: var(--main-red);
+  border: none;
+  background-color: var(--clear-white);
+  border-radius: 22px;
+  transition: background-color var(--transition);
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  @include desk {
+    display: none;
+  }
+}
+.menu-icon {
+  fill: var(--main-red);
+  transition: fill var(--transition);
+
+  &:hover,
+  &:focus {
+    fill: var(--clear-white);
+  }
+}
+
+.header-wrap {
+  padding-top: 137px;
+
+  @include tab {
+    padding-top: 15px;
+  }
+  @include desk {
+    padding-top: 84px;
+    padding-left: 69px;
+  }
+}
+.header-title {
+  max-width: 218px;
+  margin-bottom: 19px;
+  @include font(26px, 400, 30px, null);
+  font-family: Titan One;
+  text-transform: uppercase;
+  color: var(--clear-white);
+  @include tab {
+    @include font(22px, null, 25px, null);
+    max-width: 162px;
+  }
+
+  @include desk {
+    @include font(38px, null, 44px, null);
+    max-width: 277px;
+  }
+}
+.title-red {
+  color: var(--main-red);
+  font-size: 48px;
+  line-height: 96.5%;
+  text-transform: uppercase;
+  @include tab {
+    font-size: 34px;
+    line-height: 90.5%;
+  }
+  @include desk {
+    font-size: 58px;
+  }
+}
+
+// .draft {
+//   width: 100%;
+//   height: 389px;
+// }
+.wrap-list {
+  display: flex;
+}
+
+.wrap-button {
+  display: block;
+  padding: 8px 15px;
+  @include font(8px, null, 10px, null);
+  color: #d41443;
+  border: none;
+  background: #fff;
+  border-radius: 22px;
+  transition: background-color var(--transition);
+  &:hover,
+  &:focus {
+    background-color: var(--white-btn-hover);
+  }
+  @include desk {
+    padding: 13px 20px;
+    @include font(14px, null, 18px, null);
+    border-radius: 20px;
+  }
+}
+
+.wrap-item {
+  &:nth-child(1) {
+    .wrap-button {
+      margin-right: 8px;
+      color: var(--clear-white);
+      background: var(--main-red);
+      &:hover,
+      &:focus {
+        background-color: var(--red-btn-hover);
+      }
+    }
+  }
+}
