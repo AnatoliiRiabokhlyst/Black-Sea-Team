@@ -1,10 +1,10 @@
-.gallery{
-    padding: 0 38px 0 38px;
+.gallery-container{
+    padding: 97px 20px 0 20px;
     @include tab{
-        padding: 0 86px 0 86px;
+        padding: 140px 74px 0 74px;
     }
     @include desk{
-        padding: 0 135px 0 135px;
+        padding: 160px 135px 0 135px;
     }
 }
 
@@ -18,17 +18,6 @@
     grid-template-rows: auto; 
     gap: 5px 5px; 
 }
-
-// .img-1 { grid-area: 3 / 1 / 5 / 2; }
-// .img-2 { grid-area: 2 / 2 / 4 / 3; }
-// .img-3 { grid-area: 4 / 2 / 6 / 3; }
-// .img-10 { grid-area: 3 / 7 / 5 / 8; }
-// .img-8 { grid-area: 2 / 6 / 4 / 7; }
-// .img-9 { grid-area: 4 / 6 / 6 / 7; }
-// .img-6 { grid-area: 3 / 5 / 5 / 6; }
-// .img-7 { grid-area: 5 / 5 / 7 / 6; }
-// .img-4 { grid-area: 1 / 3 / 5 / 5; }
-// .img-5 { grid-area: 5 / 3 / 7 / 4; }
 
 .gallery-item{
     display: block;
@@ -67,6 +56,7 @@
         grid-area: 3 / 7 / 5 / 8; 
     }
 }
+
 .gallery-item .gallery-img{
     transition: transform 250ms, box-shadow 250ms;
     border-radius: 5px;
