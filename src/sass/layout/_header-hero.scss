@@ -10,7 +10,7 @@
 
   background-image: url('../images/header/icecream-mob.svg'), url('../images/header/ellipse.svg');
   @include tab {
-    padding: 37px 34px 160px 34px;
+    padding: 37px 34px 34px 34px;
     background-image: url('../images/header/icecream-tab.svg'),
       url('../images/header/ellipse-tab.svg');
   }
@@ -20,6 +20,9 @@
     background-image: url('../images/header/icecream-desk.svg'),
       url('../images/header/ellipse-desk.svg');
   }
+}
+.header-container {
+  position: relative;
 }
 
 .header-nav {
@@ -186,5 +189,34 @@
         background-color: var(--red-btn-hover);
       }
     }
+  }
+}
+.header-wrap-bottom {
+  margin-top: 66px;
+}
+.header-text {
+  width: 114px;
+  height: 44px;
+  overflow: hidden;
+  @include font(8px, null, 12px, null);
+  color: var(--clear-white);
+}
+.header-gap {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  padding-left: 118px;
+}
+.header-thumb-right {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  width: 168px;
+  position: absolute;
+  bottom: -34px;
+  right: 1%;
+  @include desk {
+    width: 293px;
+    right: 10%;
   }
 }
