@@ -1,0 +1,226 @@
+.products-section {
+  padding-top: 120px;
+  padding-bottom: 98px;
+  background-color: var(--clear-white);
+  .label-title {
+    margin-bottom: 15px;
+  }
+  .section-title {
+    margin-bottom: 15px;
+  }
+  .list {
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+  @include tab {
+    --card-amt: 3;
+    // --card-gap: 20px;
+    padding-bottom: 115px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include desk {
+    // padding-top: 127px;
+    // padding-bottom: 120px;
+    padding: 127px 35px 120px 35px;
+    --card-gap: 25px;
+  }
+}
+.icecream-item::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  display: block;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 48%);
+  background-image: url('../images/products/mob-pink-icecream.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 249px 252px;
+  text-align: center;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/products/mob-pink-icecream@2x.png');
+  }
+  @include tab {
+    width: 220px;
+    height: 226px;
+    background-size: 220px 226px;
+    transform: translate(-50%, 58%);
+    background-image: url('../images/products/tab-pink-icecream.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/tab-pink-icecream@2x.png');
+    }
+  }
+  @include desk {
+    width: 335px;
+    height: 335px;
+    background-size: 335px 335px;
+    transform: translate(-50%, 10%);
+    background-image: url('../images/products/desk-pink-icecream.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/desk-pink-icecream@2x.png');
+    }
+  }
+}
+.icecoffee-item::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  display: block;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 48%);
+  background-image: url('../images/products/mob-coffee.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 249px 252px;
+  text-align: center;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/products/mob-coffee@2x.png');
+  }
+  @include tab {
+    width: 220px;
+    height: 226px;
+    transform: translate(-50%, 58%);
+    background-size: 220px 226px;
+    background-image: url('../images/products/tab-coffee.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/tab-coffee@2x.png');
+    }
+  }
+  @include desk {
+    width: 335px;
+    height: 335px;
+    background-size: 337px 335px;
+    transform: translate(-50%, 10%);
+    background-image: url('../images/products/desk-coffee.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/desk-coffee@2x.png');
+    }
+  }
+}
+.milkshakes-item::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  display: block;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 48%);
+  background-image: url('../images/products/mob-milkshake.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 249px 252px;
+  text-align: center;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/products/mob-milkshake@2x.png');
+  }
+  @include tab {
+    width: 220px;
+    height: 224px;
+    transform: translate(-50%, 58%);
+    background-size: 220px 224px;
+    background-image: url('../images/products/tab-milkshake.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/tab-milkshake@2x.png');
+    }
+  }
+  @include desk {
+    width: 335px;
+    height: 335px;
+    background-size: 335px 335px;
+    transform: translate(-50%, 10%);
+    background-image: url('../images/products/desk-milkshake.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/desk-milkshake@2x.png');
+    }
+  }
+}
+.description-open-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--clear-white);
+}
+.products {
+  margin-top: 0;
+  margin-top: 130px;
+  max-width: 280px;
+  padding: 161px 40px 41px 40px;
+  border-radius: 24px;
+  @include tab {
+    margin-top: 150px;
+    max-width: 220px;
+    padding: 152px 11px 40px 11px;
+  }
+  @include desk {
+    margin-top: 260px;
+    max-width: 335px;
+    padding: 163px 45px 50px 45px;
+  }
+}
+.products:first-child {
+  @media screen and (max-width: 619px) {
+    margin-top: 144px;
+  }
+}
+.products:not(:last-child) {
+  @media screen and (min-width: 620px) and (max-width: 767px) {
+    margin-top: 144px;
+  }
+}
+
+.icecream-item {
+  position: relative;
+  background-color: var(--light-pink-background);
+}
+.icecoffee-item {
+  position: relative;
+  background-color: var(--light-brown-background);
+}
+.milkshakes-item {
+  position: relative;
+  background-color: var(--light-green-background);
+}
+.products-title {
+  @include font(20px, 400, 23px, null);
+  font-family: Titan One;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--clear-white);
+}
+.products-title::after {
+  content: '';
+  display: block;
+  background-image: url('../images/components/dots.svg');
+  background-repeat: no-repeat;
+  background-size: 26px 6px;
+  width: 26px;
+  height: 6px;
+  margin: 30px auto;
+  @include desk {
+    margin: 32px auto;
+  }
+}
+.products-text {
+  @include font(14px, 700, 21px, null);
+  font-family: DM Sans;
+  text-align: center;
+  color: var(--clear-white);
+  margin-bottom: 30px;
+  @include tab {
+    margin-bottom: 40px;
+  }
+  @include desk {
+    margin-bottom: 62px;
+  }
+}
