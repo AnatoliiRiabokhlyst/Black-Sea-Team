@@ -1,38 +1,77 @@
-<section class="about">
-  <div class="conteiner">
-    <div class="section-title">
-      <p class="label">tradition and love</p>
-      <h2 class="about-title">how it’s made?</h2>
+<section class="about" id="about">
+  <div class="container">
+    <p class="label-title">tradition and love</p>
+    <h2 class="section-title">how it’s made?</h2>
+    <div class="about-content">
+      <div class="about-image-wrapper">
+        <picture>
+          <source
+            srcset="./images/about/cow-1x.png 1x, ./images/about/cow-2x.png 2x"
+            type="image/png"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/about/cow-tab-1x.png 1x, ./images/about/cow-tab@2x.png 2x"
+            type="image/png"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/about/cow-mobile-1x.png 1x, ./images/about/cow-mobile@2x.png 2x"
+            type="image/png"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="./images/about/cow-1x.webp 1x, ./images/about/cow-2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/about/cow-tab-1x.webp 1x, ./images/about/cow-tab@2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/about/cow-mobile-1x.webp 1x, ./images/about/cow-mobile@2x.webp 2x"
+            type="image/webp"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="about-image"
+            src="./images/about/cow-mobile-1x.png"
+            alt="корова"
+            loading="lazy"
+            width="280"
+            height="279"
+          />
+        </picture>
+      </div>
+      <div class="about-text-wrapper">
+        <p class="about-text text-black">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about-text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+          <br />
+          <br />
+          <br />
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <p class="about-text text-black is-hidden" data-about-hidden>
+          The first ice cream recipe was opened and declassified for widespread publication in the
+          XI century BC in the book "Shi Jing" in China more than 4000 years ago. Its essence was
+          that fresh snow or ice mixed with slices of lemons, oranges and pomegranate seeds.
+        </p>
+
+        <button class="main-btn about-btn" data-about-open type="button">
+          Read more
+          <svg class="about-icon" width="5" height="8">
+            <use href="./images/icons.svg#icon-next"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-    <picture>
-      <source
-        srcset="./images/about/cow-1x.png 1x, ./images/about/cow-2x.png 2x"
-        media="(min-width: 320px)"
-      />
-      <source
-        srcset="./images/about/cow-1x.webp 1x, ./images/about/cow-2x.webp 2x"
-        type="image/webp"
-        media="(min-width: 320px)"
-      />
-      <img class="about-image" src="./images/about/cow-mobile-1x.png" alt="корова" loading="lazy" />
-    </picture>
-    <p class="text-one">
-      Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
-      eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-    </p>
-    <p class="text-too">
-      Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
-      imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-      Cras massa nibh, tincidunt. <br />
-      <br />
-      Aliquam erat volutpat. Aenean <br />
-      accumsan.
-    </p>
-    <button class="main-btn about-btn" type="button">
-      <!-- <svg>
-        <use></use>
-      </svg> -->
-      Read more
-    </button>
   </div>
 </section>
