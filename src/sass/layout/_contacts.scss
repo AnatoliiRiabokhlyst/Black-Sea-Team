@@ -45,7 +45,7 @@
 
     &:nth-child(even) {
       .contacts-cards-text {
-        background-color: #c2e297;
+        background-color: var(--light-green-background);
       }
     }
   }
@@ -126,10 +126,10 @@
     @media screen and (min-width: 1090px) {
       line-height: 1.83;
     }
-    &-timetable:not(:last-child) {
+  }
+  &-timetable:not(:last-child) {
       margin-bottom: 10px;
     }
-  }
   .adress {
     margin-top: 32px;
   }
@@ -180,10 +180,9 @@
   &-btn-franchise {
     font-family: 'DM Sans';
     font-size: 16px;
+    line-height: 1.31px;
     font-weight: bold;
     margin-top: 0px;
-    font-size: 16px;
-    line-height: 1.31px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -198,7 +197,7 @@
     border-radius: 22px;
     &:hover,
     &:focus {
-      background-color: #ecebeb;
+      background-color: var(--white-btn-hover);
       outline: none;
     }
   }
@@ -208,7 +207,6 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       margin-left: 15px;
       position: relative;
       margin-bottom: 0;
@@ -226,17 +224,17 @@
   }
 }
 .icon-location {
-  fill: #ffffff;
+  fill: var(--clear-white);
   position: absolute;
   align-items: center;
   text-align: center;
-  margin-left: 90px;
+  margin-left: 110px;
   justify-content: center;
 }
 .icon-franhise {
- fill: #d41443;
+  fill:var(--main-red);
   position: absolute;
- margin-left: 89px;
+  margin-left: 89px;
   align-items: center;
   text-align: center;
   justify-content: center;
