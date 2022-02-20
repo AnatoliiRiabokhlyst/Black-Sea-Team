@@ -22,10 +22,13 @@
 <div class="button-container">
     <button type="button" class="menu-button">
         <svg class="menu-icon" width="20" height="12">
-            <use href="./images/icons.svg#icon-burger"></use>
+            <use href="./images/icons.svg#icon-new-header-burger"></use>
         </svg>
     </button>
-<button type="button" class="main-btn header-button">Buy now</button>
+<button type="button" class="main-btn header-button">Buy now
+    <svg width=4 height=8 class="header-button-icon">
+    <use href="./images/icons.svg#icon-next"></use>
+</svg></button>
 </div>
 </nav>
         
@@ -38,12 +41,42 @@
             <li class="wrap-item"><a href="" class="link" id="./about.html"><button type="button" class="main-btn wrap-button">How it’s made?</button></a></li>
         </ul>
         </div>
+        <div class="header-wrap-right">
+            
+        <p class="point-count point-count-top">16</p>
+        <span class="point-count-ellipse point-count-ellipse1"></span>
+        <p class="point-type point-cafe">cafe</p>
+        
+        <p class="point-count point-count-bottom">23</p>
+        <span class="point-count-ellipse point-count-ellipse2"></span>
+
+        <p class="point-type point-truck">food trucks</p>
+    
+        </div>
     </div>
     <div class="header-gap">
     <div class="header-wrap-bottom">
         <p class="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        <button type="button"></button>
+        <button type="button" class="header-open-btn">
+            <svg class="header-open-icon" >
+                <use href="./images/icons.svg#icon-new-arrow-right">
+                </use>
+            </svg>
+        </button>
     </div>
+    </div>
+    <div class="header-thumb-left">
+        <picture>
+            <source srcset="./images/header/header-milk-1x.png 1x, ./images/header/header-milk-2x.png 2x" media="(min-width:1280px)"
+                type="img/png" />
+            <source srcset="./images/header/header-milk-1x.webp 1x, ./images/header/header-milk-1x.webp 2x" media="(min-width:1280px)"
+                type="img/webp" />
+            <source srcset="./images/header/header-milk-tab-1x.png 1x, ./images/header/header-milk-tab-2x.png 2x"
+                media="(min-width:768px)" type="img/png" />
+            <source srcset="./images/header/header-milk-tab-1x.webp 1x, ./images/header/header-milk-tab-2x.webp 2x"
+                media="(min-width: 768px)" type="img/webp" />
+            <img src="./images/header/header-milk-1x.png" alt="Jug of milk" loading="lazy">
+        </picture>
     </div>
     <div class="header-thumb-right">
     <picture>
@@ -51,7 +84,7 @@
         <source srcset="./images/header/girl-1x.webp 1x, ./images/header/girl-1x.webp 2x" media="(min-width:1280px)" type="img/webp" />
         <source srcset="./images/header/girl-tab-1x.png 1x, ./images/header/girl-tab-2x.png 2x" media="(min-width:768px)" type="img/png" />
         <source srcset="./images/header/girl-tab-1x.webp 1x, ./images/header/girl-tab-2x.webp 2x" media="(min-width: 768px)" type="img/webp" />
-        <img  src="./images/header/girl-tab-1x.png" alt="Girl with icecream">
+        <img  src="./images/header/girl-1x.png" alt="Girl with icecream" loading="lazy">
     </picture>
     </div>
 
