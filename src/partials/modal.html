@@ -1,16 +1,17 @@
-<div class="backdropp modal">
+<div class="backdrop is-hidden" data-modal> 
+    <div class="modal">
     
-    <button type="button" class="modal-close">
+    <button type="button" class="modal-close" data-modal-close>
         <svg class="" width="14" height="14">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
 
-<p class="modal-title">Enter your contacts</p>
-<form class="" action="#">
+    <p class="modal-title">Enter your contacts</p>
+    <form class="" action="#">
 
-    <label class="input-txt" for="user-name">Name</label>
-    <input type="text" 
+        <label class="input-txt" for="user-name">Name</label>
+        <input type="text" 
             class="form-input" 
             name="user-name" 
             placeholder="" 
@@ -18,7 +19,7 @@
             id="user-name"
             required/>
 
-<label class="input-txt" for="user-tel">Telephone</label>
+        <label class="input-txt" for="user-tel">Telephone</label>
             <input type="tel" 
             class="form-input" 
             name="user-tel" 
@@ -89,5 +90,6 @@
             <div class="modal-btn">
                 <button class="" type="submit">Send</button>
                 </div>
-</form>
+        </form>
+    </div>
 </div>
