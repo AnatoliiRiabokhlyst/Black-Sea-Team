@@ -1,3 +1,7 @@
+.gallery{
+    background: linear-gradient(to bottom, var(--sections-light-pink-background) 40%, var(--clear-white) 40%);
+}
+
 .gallery-container{
     padding: 97px 20px 0 20px;
     @include tab{
