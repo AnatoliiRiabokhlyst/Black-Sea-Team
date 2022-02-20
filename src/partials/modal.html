@@ -6,89 +6,71 @@
             </svg>
         </button>
 
+      <p class="modal-title">Choose the product</p>
+            
+      <ul class="list products-list">
+          <li class="products-item">
+              <input class="input-prod icecream-checkbox"  type="checkbox" name="icecream" id="icecream"/>
+              <label for="icecream" class="label-prod">
+                  <span class="product-name">IceCream</span>
+              </label>
+              </li>
+  
+          <li class="products-item">
+              <input class="input-prod  icecoffe-checkbox"  type="checkbox" name="icecoffe" id="icecoffe"/>
+              <label for="icecoffe" class="label-prod">
+                  <span class="product-name">Icecoffe</span>
+              </label>
+              </li>
+  
+          <li class="products-item">
+              <input class="input-prod iceshake-checkbox"  type="checkbox" name="iceshake" id="iceshake"/>
+              <label for="iceshake" class="label-prod">
+                  <span class="product-name">Iceshake</span>
+                  </label>
+                  </li>
+              
+  
+          <li class="products-item">
+              <input class="input-prod chocoice-checkbox"  type="checkbox" name="chocoice" id="chocoice"/>
+              <label for="chocoice" class="label-prod">
+                  <span class="product-name">Chocolate ice cream</span>
+              </label>
+              </li>
+  
+          <li class="products-item">
+              <input class="input-prod fruitice-checkbox"  type="checkbox" name="iceshake" id="fruitice"/>
+              <label for="fruitice" class="label-prod">
+              <span class="product-name">Fruit ice cream</span>
+          </label>
+          </li>
+  
+          <li class="products-item">
+              <input class="input-prod sorbet-checkbox"  type="checkbox" name="sorbet" id="sorbet"/>
+              <label for="sorbet" class="label-prod">
+              <span class="product-name">Sorbet</span>
+          </label>
+          </li>
+      </ul>
+  
         <p class="modal-title">Enter your contacts</p>
-        <form class="" action="#">
-
-        <label class="input-txt" for="user-name">Name</label>
-        <input type="text" 
-            class="form-input" 
-            name="user-name" 
-            placeholder="" 
-            minlength="3"
-            id="user-name"
-            required/>
-
-        <label class="input-txt" for="user-tel">Telephone</label>
-            <input type="tel" 
-            class="form-input" 
-            name="user-tel" 
-            placeholder="" 
-            id="user-tel"
-            required/>
-            <p>Choose your product</p>
-
-            <ul class="list prouducts-list">
-                <li class="prouducts-item">
-                    <input class="icecream-checkbox"  type="checkbox" name="icecream" id="icecream"/>
-            <label for="icecream" class="check-txt">
-               
-                <span class="">
-                IceCream
-                </span>
+        <form>
+             <label class="input-txt"
+                 for="user-name">Name
             </label>
-            </li>
-
-                <li class="prouducts-item">
-                    <input class="icecoffe-checkbox"  type="checkbox" name="icecoffe" id="icecoffe"/>
-            <label for="icecoffe" class="check-txt">
-            
-                <span class="">
-                    Icecoffe
-                </span>
-            </label>
-            </li>
-                    <li class="prouducts-item">
-                        <input class="iceshake-checkbox"  type="checkbox" name="iceshake" id="iceshake"/>
-                <label for="iceshake" class="check-txt">
-                    <span class="">
-                        Iceshake
-                    </span>
-                </label>
-                </li>
-            </li>
-                <li class="prouducts-item">
-                    <input class="iceshake-checkbox"  type="checkbox" name="iceshake" id="iceshake"/>
-            <label for="iceshake" class="check-txt">
-                <span class="">
-                    Iceshake
-                </span>
-            </label>
-            </li>
-        </li>
-        <li class="prouducts-item">
-            <input class="iceshake-checkbox"  type="checkbox" name="iceshake" id="iceshake"/>
-        <label for="iceshake" class="check-txt">
-        <span class="">
-            Iceshake
-        </span>
-        </label>
-        </li>
-        </li>
-        <li class="prouducts-item">
-            <input class="iceshake-checkbox"  type="checkbox" name="iceshake" id="iceshake"/>
-        <label for="iceshake" class="check-txt">
-        <span class="">
-            Iceshake
-        </span>
-        </label>
-        </li>
-            </ul>
-            
-            
-
-            <div class="modal-btn">
-                <button class="" type="submit">Send</button>
-                </div>
+          <input type="text" class="form-input" 
+           name="user-name" placeholder="" 
+              minlength="3" id="user-name"
+              required/>
+  
+         <label class="input-txt" for="user-tel">Telephone</label>
+          <input type="tel" class="user-tel form-input" 
+              name="user-tel"  placeholder="" 
+              id="user-tel" required/>
+  
+              <div class="btn-wrap">
+                  <button class="modal-btn" type="submit">Send</button>
+                  </div>
         </form>
     </div>
 </div>
