@@ -150,6 +150,12 @@
   border: none;
   border-radius: 50%;
   background-color: var(--clear-white);
+  transition: background-color var(--transition), transform var(--transition);
+}
+.description-open-btn:hover,
+.description-open-btn:focus {
+  background-color: var(--sections-light-pink-background);
+  transform: scale(1.5);
 }
 .products {
   margin-top: 0;
