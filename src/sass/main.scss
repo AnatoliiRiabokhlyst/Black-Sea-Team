@@ -2,14 +2,18 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-@import './base/reset';
 @import './utils/variables';
 @import './utils/mixins';
-@import './base/common';
 @import './utils/hidden';
+
+@import './base/reset';
+@import './base/section';
+@import './base/common';
+
 @import './components/card-set';
 @import './components/container';
 @import './components/btn';
+
 @import './layout/header-hero';
 @import './layout/products';
 @import './layout/about';
