@@ -1,20 +1,21 @@
 .mobile-container {
   /* display: none; */
-  position: relative;
+
   position: fixed;
   padding: 60px 21px 174px 21px;
-  max-width: 250px;
+  width: 250px;
   height: 502px;
   top: 0;
-  left: 70;
-  z-index: 999;
+  z-index: 1;
   background-color: var(--mob-menu-back-color);
-  @mixin tab {
-    max-width: 254px;
+
+  transition: left 500ms, visibility 500ms;
+
+  @media screen and (min-width: 768px) {
+    width: 30%;
     height: 100vh;
   }
 }
-
 .mobile-container.is-open {
   display: block;
 }
@@ -34,7 +35,8 @@
 }
 .buy-now {
   display: block;
-  padding: 12px 37px;
+  margin: auto;
+  padding: 12px 40px;
   color: var(--main-red);
   font-weight: 700;
   font-size: 16px;
