@@ -1,0 +1,191 @@
+
+
+.contacts-box:not(:last-child) {
+@media screen and (max-width: 768px) {
+border-bottom: 1px solid var(--border-lines-grey);
+  padding-bottom: 25px;
+  margin-top: 25px;
+}
+@media screen and (min-width: 768px) {
+  border-bottom: 1px solid var(--border-lines-grey);
+  padding-bottom: 32px;
+  margin-top: 30px;
+}
+}
+.contacts-cards-text {
+  color: var(--clear-white);
+  background-color:var(--light-brown-background);
+   @media screen and (max-width: 768px) {
+  font-size: 12px;
+  line-height: 1.5px;
+  padding: 2px 25px;
+   }
+  font-weight: 500;
+  line-height: 1.86;
+  text-align: center;
+  border-radius: 6px;
+border: none;
+  display: inline;
+@media screen and (min-width: 768px) {
+  padding: 2px 15px;
+ }
+}
+.contacts-cards-green{
+background-color: #C2E297;
+}
+.contacts-location {
+  font-style: normal;
+  font-weight: 500;
+ @media screen and (max-width: 768px) {
+  font-size: 12px;
+   }
+  line-height: 1.86;
+  color: var(--clear-black);
+  display: flex;
+}
+
+.contacts-location-text {
+  font-style: normal;
+  font-weight: 500;
+   @media screen and (max-width: 768px) {
+  font-size: 12px;
+  line-height:1.5;
+  text-align: left;
+   }
+ 
+  line-height: 1.83;
+  color: var(--copyright-grey);
+  width: auto;
+  margin-top: 10px;
+}
+.contacts-timetable-text {
+  font-style: normal;
+    @media screen and (max-width: 768px) {
+  font-size: 12px;
+
+   }
+  line-height: 1.86;
+  color:var(--clear-black);
+  display: flex;
+}
+.contacts-timetable-time {
+  font-style: normal;
+ @media screen and (max-width: 768px) {
+  font-size: 12px;
+   }
+  font-weight: 500;
+  line-height: 1.86;
+  color: #ffa5ba;
+}
+.contacts-timetable:not(:last-child) {
+  margin-bottom: 10px;
+}
+.adress {
+  margin-top: 32px;
+}
+.contacts-adress-link {
+  font-style: normal;
+    @media screen and (max-width: 768px) {
+  font-size: 12px;
+  line-height: 1.5px;
+   }
+  font-weight: 500;
+  line-height: 1.83;
+  color: var(--copyright-grey);
+}
+.contacts-list {
+  margin-bottom: 30px;
+  --card-amt: 1;
+  --card-gap: 20px;
+ 
+  @media screen and (min-width: 768px) {
+   flex-wrap: nowrap;
+  --card-amt: 3;
+ --card-gap: 30px;
+  }
+}
+.contacts-item {
+     @media screen and (min-width: 320px) {
+  padding: 43px 21px 43px 20px;
+   }
+  max-width: 330px;
+  margin-left: 30px;
+  background: var(--clear-white);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  @media screen and (min-width: 740px) {
+  padding: 50px 32px 50px 31px;
+   }
+  @media screen and (min-width: 1090px) {
+  padding: 52px 48px 61px 49px;
+   }
+}
+.contacts-btn-location {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.31px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color:var(--clear-white);
+  background: #d41342;
+  border-radius: 22px;
+  padding: 20px 35px 20px  17px;
+   @media screen and (min-width: 768px) {
+   padding: 20px 54px 20px  35px;}
+  cursor: pointer;
+  border: none;
+  transition: backgroun-color var(--transition);
+  &:hover,
+  &:focus {
+    background-color:var(--white-btn-hover);
+    outline: none;
+}
+}
+.contacts-btm-list{
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+}
+.contacts-btn-franchise {
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 0px;
+  font-size: 16px;
+  line-height: 1.31px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--main-red);
+  padding: 20px 49px 20px 32px;
+  @media screen and (min-width: 768px) {
+  padding: 20px 58px 20px  39px;}
+  cursor: pointer;
+  border: none;
+  background:var(--clear-white);
+  border-radius: 22px;
+}
+.contacts-btm-item {
+display: flex;
+justify-content: center;
+@media screen and (min-width: 768px) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ margin-left: 15px ;
+ margin-bottom:0;
+ 
+}
+}
+.contacts-btm-item:not(:last-child){
+  @media screen and (max-width: 768px) {
+margin-bottom: 10px;}
+}
+  .contacts-btm-item:not(:first-child){
+  @media screen and (min-width: 768px) {
+margin-left: 15px;}
+  }
+
+  
