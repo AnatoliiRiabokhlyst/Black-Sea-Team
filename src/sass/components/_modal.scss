@@ -1,15 +1,8 @@
-.backdropp {
-    width: 100vw;
-    height: 100vh;
-    position:fixed;
-    top: 0;
-    transition: opacity 500ms, visibility 500ms;
-    &.hidden .modal {
-      transform: translate(-50%, -50%) scale(0.1);
-    }
-  }
-
-  .modal {
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.1);
+}
+  
+.modal {
     max-width: 250px;
     width: 100%;
     // min-height: 609px;
