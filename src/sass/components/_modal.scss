@@ -9,12 +9,13 @@
     }
   }
 
-.modal {
+  .modal {
     max-width: 250px;
     width: 100%;
     // min-height: 609px;
-    border-radius: 4px;
+    border-radius: 10px;
     position: absolute;
+    border-radius: 15px;
     background-color: var(--mob-menu-back-color);
     top: 50%;  
     left: 50%;
@@ -50,12 +51,13 @@
   }
 
   .modal-title {
-    @include font(16px, normal, 21px, 0.04em);
+    @include font(20px, normal, 22px, 0.04em);
     font-family: Titan One;
     font-style: normal;
     text-transform: uppercase;
     text-align: center;
-    color: var(--clear-white);
+    color: var(--main-red);
+    margin-bottom: 10px;
   }
 
   .input-txt {
@@ -67,6 +69,68 @@
     color: var(--clear-white);
   }
 
+  .product-name {
+    @include font(15px, normal, 18px, 0.04em);
+    font-family: Titan One;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--clear-white);
+    cursor: pointer;
+   }
+
+  .input-prod {
+      display: none;
+      width: 100%;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  .input-prod {
+    &:checked + .label-prod {
+        transform: scale(1.5);    
+    }
+  }
+
+  .label-prod {
+    height: 25px;
+    padding: 2px 25px;
+    display: flex;
+    justify-content: center;
+    transition: transform var(--transition-function);
+    &:hover, &:focus {
+        transform: scale(1.1);
+    }
+   }
+
+   .label-prod {
+       margin-bottom: 20px;
+   }
+
+   .products-list {
+       margin-bottom: 20px;
+   }
+
+   .modal-btn {
+          display: block;
+          padding: 12px 37px;
+          @include font(16px, 700, 21px, null);
+        
+          color: var(--main-red);
+          border: none;
+          background-color: var(--clear-white);
+          border-radius: 22px;
+          transition: background-color var(--transition);
+        }
+
+        .btn-wrap {
+          display: flex;
+          justify-content: center;
+        }
+
+        .user-tel {
+          margin-bottom: 20px;
+        }
+
   .form-input {
       width: 100%;
       height: 30px;
@@ -75,30 +139,16 @@
       padding-left: 40px;
       cursor: pointer;
       outline: none;
+      
       transition: border-color var(--transition-time)   var(--transition-function) ;
       &:hover, &:focus {
         border-color: var(--light-brown-background);
-        color: var(--light-brown-background);
+        color: var(--light-green-background);
         }
         &::placeholder {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.01em;
-        color: rgba(117, 117, 117, 0.5);
-        }
-        .products-list {
-            // padding: 0;
-            // margin: 0;
-            // list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: -10px;
-            margin-top: -10px;
-        }
-
-        .products-item {
-            margin-left: 10px;
-            margin-top: 10px;
-            flex-basis: calc(100%/2 - 10px);
+        color: var(--clear-black);
         }
   }
