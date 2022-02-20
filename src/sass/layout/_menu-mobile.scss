@@ -33,8 +33,10 @@
   fill: var(--main-red);
 }
 .buy-now {
+  display: block;
+  padding: 12px 37px;
   color: var(--main-red);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   margin-bottom: 30px;
   max-width: 209px;
