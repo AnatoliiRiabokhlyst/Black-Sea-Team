@@ -65,7 +65,7 @@
     font-size: 12px;
     line-height: 1.62;
     color: #000000;
-    margin-top: 46px;
+    // margin-top: 46px;
 
     padding-left: 30px;
     padding-right: 30px;
@@ -78,7 +78,7 @@
     font-size: 12px;
     line-height: 1.62;
     color: #907e82;
-    margin-top: 47px;
+    // margin-top: 47px;
 
     padding-left: 30px;
     padding-right: 30px;
@@ -98,11 +98,20 @@
     padding-bottom: 17px;
     padding-left: 37px;
     padding-right: 56px;
-    margin-top: 17px;
-    margin-left: 30px;
-    position: relative;
+    // margin-top: 17px;
+    // margin-left: 30px;
   }
-
+  .about-text {
+    &:not(:last-of-type) {
+      margin-bottom: 35px;
+    }
+    &:last-of-type {
+      margin-bottom: 45px;
+    }
+  }
+  .is-hidden {
+    display: none;
+  }
   .about-icon {
     position: absolute;
     display: flex;
@@ -111,6 +120,7 @@
   .about-content {
     @include tab {
       display: flex;
+      align-items: center;
     }
   }
   .about-image-wrapper {
