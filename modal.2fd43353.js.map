@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/modal.js"],"names":["console","log"],"mappings":";AAAAA,QAAQC,IAAI","file":"modal.2fd43353.js","sourceRoot":"../src","sourcesContent":["console.log(\"hello from modal\");"]}
