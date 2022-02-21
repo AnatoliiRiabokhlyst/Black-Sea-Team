@@ -5,21 +5,25 @@
 
   background-color: var(--light-pink-background);
   background-repeat: no-repeat;
-  background-position: left calc(100% / 2 + 65px) bottom, center left calc(100% / 2 + 55px);
+  background-position: left 55% bottom, right 45% center;
+  // background-position: left calc(100% / 2 + 65px) bottom, center left calc(100% / 2 + 55px);
   background-size: auto, 350px;
 
   background-image: url('../images/header/icecream-mob.svg'), url('../images/header/ellipse.svg');
   @include tab {
-    padding: 37px 34px 160px 34px;
+    padding: 37px 34px 34px 34px;
     background-image: url('../images/header/icecream-tab.svg'),
       url('../images/header/ellipse-tab.svg');
   }
   @include desk {
-    padding: 37px 115px 292px 46px;
+    padding: 37px 115px 56px 46px;
     background-size: auto, 540px;
     background-image: url('../images/header/icecream-desk.svg'),
       url('../images/header/ellipse-desk.svg');
   }
+}
+.header-container {
+  position: relative;
 }
 
 .header-nav {
@@ -69,6 +73,7 @@
   @include tab {
     padding-top: 0;
     display: flex;
+    align-items: center;
   }
 }
 
@@ -91,6 +96,15 @@
 .menu-button {
   background-color: transparent;
   border: none;
+  display: inline-flex;
+  height: 20px;
+  padding: 0;
+  &:hover,
+  &:focus {
+    .menu-icon {
+      fill: var(--clear-white);
+    }
+  }
   @include desk {
     display: none;
   }
@@ -98,15 +112,12 @@
 .menu-icon {
   fill: var(--main-red);
   transition: fill var(--transition);
-
-  &:hover,
-  &:focus {
-    fill: var(--clear-white);
-  }
 }
 
 .header-wrap {
   padding-top: 137px;
+  display: flex;
+  justify-content: space-between;
 
   @include tab {
     padding-top: 15px;
@@ -147,10 +158,6 @@
   }
 }
 
-// .draft {
-//   width: 100%;
-//   height: 389px;
-// }
 .wrap-list {
   display: flex;
 }
@@ -186,5 +193,189 @@
         background-color: var(--red-btn-hover);
       }
     }
+  }
+}
+.header-wrap-right {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  position: relative;
+  width: 51px;
+  @include desk {
+    width: 92px;
+  }
+}
+.point-count-ellipse {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--clear-white);
+  border-radius: 50%;
+  @include desk {
+    width: 30px;
+    height: 30px;
+  }
+}
+.point-count-ellipse1 {
+  position: absolute;
+  right: -5%;
+  top: -2%;
+  @include desk {
+    top: -3%;
+  }
+}
+.point-count-ellipse2 {
+  position: absolute;
+  top: 48px;
+  right: -7%;
+  @include desk {
+    top: 80px;
+    right: -8%;
+  }
+}
+
+.point-count {
+  @include font(28px, null, 32px, null);
+  font-family: Titan One;
+  color: var(--main-red);
+
+  @include desk {
+    @include font(46px, null, 53px, null);
+  }
+}
+
+.point-type {
+  @include font(8px, null, 10px, null);
+  color: var(--clear-white);
+  @include desk {
+    @include font(14px, null, 18px, null);
+  }
+}
+.point-count-top {
+  position: absolute;
+  right: 10%;
+  z-index: 999;
+}
+.point-count-bottom {
+  position: absolute;
+  top: 50px;
+  right: 10%;
+  z-index: 998;
+  @include desk {
+    top: 85px;
+  }
+}
+.point-cafe {
+  position: absolute;
+  top: 30px;
+  right: 10%;
+  @include desk {
+    top: 45px;
+  }
+}
+.point-truck {
+  position: absolute;
+  top: 80px;
+  @media screen and (max-width: 1279px) {
+    left: 0;
+  }
+
+  @include desk {
+    top: 135px;
+    right: 10%;
+  }
+}
+.header-gap {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  width: 100%;
+  padding-left: 118px;
+  @include desk {
+    padding-left: 218px;
+  }
+}
+.header-wrap-bottom {
+  margin-top: 66px;
+  @include desk {
+    margin-top: 112px;
+  }
+}
+.header-text {
+  width: 114px;
+  height: 44px;
+  margin-bottom: 7px;
+  overflow: hidden;
+  @include font(8px, null, 12px, null);
+  color: var(--clear-white);
+  @include desk {
+    @include font(14px, null, 20px, null);
+    width: 200px;
+    height: 78px;
+    margin-bottom: 20px;
+  }
+}
+.header-open-btn {
+  display: flex;
+  align-items: center;
+  cursor: poiner;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+
+  background-color: var(--clear-white);
+  transition: background-color var(--transition);
+  &:hover,
+  &:focus {
+    background-color: var(--main-red);
+    outline: none;
+    .header-open-icon {
+      fill: var(--clear-white);
+    }
+  }
+  @include desk {
+    width: 26px;
+    height: 26px;
+  }
+}
+.header-open-icon {
+  fill: var(--main-red);
+  width: 18px;
+  height: 18px;
+  transition: fill var(--transition);
+  @include desk {
+    width: 18px;
+    height: 10px;
+  }
+}
+
+.header-thumb-left {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  width: 124px;
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+
+  @include desk {
+    width: 188px;
+    left: 5%;
+    bottom: 0;
+  }
+}
+.header-thumb-right {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  width: 168px;
+  position: absolute;
+  bottom: -34px;
+  right: 1%;
+  @include desk {
+    width: 293px;
+    right: 1%;
+    bottom: -56px;
   }
 }
