@@ -2,15 +2,15 @@
   padding-top: 40px;
   display: block;
   background-color: var(--sections-light-pink-background);
-  @media screen and (min-width: 768px) {
+  @include tab {
     padding-top: 66px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     padding-top: 40px;
   }
 }
 .advantages-list {
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(var(--card-gap) * -1);
@@ -19,14 +19,14 @@
 }
 .advantages-item {
   width: 230px;
-  @media screen and (min-width: 768px) {
+  @include tab {
     flex-basis: calc(100% / 3 - var(--card-gap));
     margin-left: var(--card-gap);
     margin-top: var(--card-gap);
     width: 180px;
     padding-bottom: 0;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     width: 330px;
   }
 }
@@ -46,10 +46,10 @@
   text-transform: uppercase;
   color: var(--main-red);
   margin-bottom: 20px;
-  @media screen and (min-width: 768px) {
+  @include tab {
     @include font(48px, 400, 55px, null);
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     @include font(58px, 400, 66px, null);
   }
 }
@@ -57,10 +57,10 @@
   @include font(12px, 700, 20px, null);
   color: var(--clear-black);
   width: 230px;
-  @media screen and (min-width: 768px) {
+  @include tab {
     @include font(14px, null, 20px, null);
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     @include font(16px, null, 28px, 0.02em);
   }
 }
