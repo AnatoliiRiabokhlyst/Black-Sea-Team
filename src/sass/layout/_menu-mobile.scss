@@ -6,11 +6,11 @@
   width: 250px;
   height: 502px;
   top: 0;
-  z-index: 1;
+  z-index: 999;
   right: 0;
   background-color: var(--mob-menu-back-color);
 
-  transition: left 500ms, visibility 500ms;
+  transition: right 500ms, visibility 500ms;
 
   @media screen and (min-width: 768px) {
     width: 30%;
@@ -19,6 +19,9 @@
 }
 .mobile-container.is-open {
   display: block;
+
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
 }
 
 .closing-button {
