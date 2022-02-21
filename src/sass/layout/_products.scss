@@ -41,7 +41,7 @@
   background-position: center;
   background-size: 249px 252px;
   text-align: center;
-
+  animation: bounce 3s infinite;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/products/mob-pink-icecream@2x.png');
   }
@@ -80,6 +80,7 @@
   background-position: center;
   background-size: 249px 252px;
   text-align: center;
+  animation: bounce 3s infinite 1s;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/products/mob-coffee@2x.png');
   }
@@ -118,6 +119,7 @@
   background-position: center;
   background-size: 249px 252px;
   text-align: center;
+  animation: bounce 3s infinite 2s;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/products/mob-milkshake@2x.png');
   }
@@ -150,13 +152,14 @@
   padding: 0;
   border: none;
   border-radius: 50%;
+  stroke: var(--main-red);
   background-color: var(--clear-white);
-  transition: background-color var(--transition), transform var(--transition);
+  transition: background-color var(--transition), stroke var(--transition);
 }
 .description-open-btn:hover,
 .description-open-btn:focus {
-  background-color: var(--sections-light-pink-background);
-  transform: scale(1.5);
+  stroke: var(--clear-white);
+  background-color: var(--main-red);
 }
 .products {
   margin-top: 0;
@@ -229,5 +232,26 @@
   }
   @include desk {
     margin-bottom: 62px;
+  }
+}
+@keyframes bounce {
+  from {
+    top: -230px;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    top: -280px;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    top: -230px;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    top: -285px;
+    animation-timing-function: ease-in;
+  }
+  to {
+    top: -230px;
   }
 }

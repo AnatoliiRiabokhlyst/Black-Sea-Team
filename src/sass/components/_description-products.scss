@@ -51,6 +51,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   border: none;
+  transition: background-color var(--transition);
   &:focus,
   &:hover {
     background-color: var(--white-btn-hover);
@@ -58,6 +59,7 @@
 }
 .description-icon {
   stroke: var(--clear-white);
+  transition: stroke var(--transition);
   .description-close:focus &,
   .description-close:hover & {
     stroke: var(--main-red);
@@ -65,9 +67,7 @@
 }
 
 .description-title {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.15;
+  @include font(12px, 400, 14px, null);
   color: var(--clear-white);
   text-align: center;
   margin-bottom: 20px;
@@ -92,10 +92,9 @@
     border-color: var(--mob-filter-border-color);
   }
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+    @include font(12px, 400, 14px, 0.03em);
     color: var(--pre-titles-pink);
+    transition: color var(--transition);
     &:hover,
     &:focus {
       color: var(--main-red);
