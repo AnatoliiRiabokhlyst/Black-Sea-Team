@@ -1,13 +1,9 @@
-.backdropp {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  transition: opacity 500ms, visibility 500ms;
-  &.hidden .modal {
+// не трогайте пожалуйста это правило с бэкдропом. Без него 
+// нарушается анимация сворачивания-разворачивания модалки
+.backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.1);
   }
-}
+// --------------------------------------------------------
 
 .modal {
   max-width: 250px;
@@ -28,9 +24,9 @@
     max-width: 528px;
   }
 
-  .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.1);
-  }
+  // .backdrop.is-hidden .modal {
+  //   transform: translate(-50%, -50%) scale(0.1);
+  // }
 }
 .modal {
   max-width: 250px;
