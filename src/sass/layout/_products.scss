@@ -33,56 +33,14 @@
   height: 252px;
   display: block;
   position: absolute;
-  top: -50%;
-  left: 50%;
+  top: -23%;
+  left: 0%;
   transform: translate(-50%, 48%);
   background-image: url('../images/products/mob-pink-icecream.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 249px 252px;
-  // text-align: center;
-  cursor: pointer;
-
-  animation-name: image;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3000ms;
-  animation-iteration-count: infinite;
-  @keyframes image {
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-
-    0% {
-      opacity: 0;
-      transform: translate3d(0, -3000px, 0) scaleY(3);
-    }
-
-    60% {
-      opacity: 1;
-      transform: translate3d(0, 25px, 0) scaleY(0.9);
-    }
-
-    75% {
-      transform: translate3d(0, -10px, 0) scaleY(0.95);
-    }
-
-    90% {
-      transform: translate3d(0, 5px, 0) scaleY(0.985);
-    }
-
-    to {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  .products {
-    &:hover {
-      animation-name: image;
-    }
-  }
+  text-align: center;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/products/mob-pink-icecream@2x.png');
