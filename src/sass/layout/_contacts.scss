@@ -12,7 +12,7 @@
       var(--clear-white) 25%,
       var(--sections-light-pink-background) 25%
     );
-    padding: 132px 35px 165px 35px;
+    padding: 132px 0 165px 0;
   }
 
   &-list {
@@ -36,10 +36,10 @@
     background: var(--clear-white);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    @include tab {
-      padding: 50px 32px 50px 25px;
+  @include tab {
+      padding: 50px 0 50px 30px;
     }
-    @include desk {
+     @include desk {
       padding: 52px 48px 61px 49px;
     }
 
@@ -230,6 +230,7 @@
   text-align: center;
   margin-left: 118px;
   justify-content: center;
+  cursor: pointer;
 }
 .icon-franhise {
   fill:var(--main-red);
@@ -238,4 +239,5 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  
 }
