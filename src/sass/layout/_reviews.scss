@@ -13,14 +13,14 @@
 .review-text {
   line-height: 30px;
 
-//   background-image: linear-gradient(to right, red red );
-//   background-size: 100% 1px;
-//   background-position: center bottom 2px;
+  //   background-image: linear-gradient(to right, red red );
+  //   background-size: 100% 1px;
+  //   background-position: center bottom 2px;
   display: inline;
-	background-repeat: no-repeat;
-	background-position: center bottom 1px;
-	background-size: 100% 1px;
-	background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
+  background-repeat: no-repeat;
+  background-position: center bottom 1px;
+  background-size: 100% 1px;
+  background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
 }
 .reviews-icon {
   position: absolute;
@@ -44,10 +44,9 @@
 }
 
 .dots-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dots-link {
@@ -62,20 +61,19 @@
 }
 
 .dots-item:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 // ----------------
 
 .switcher-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .review-address {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .switcher-link {
@@ -89,6 +87,93 @@
 }
 
 .switcher-item:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
+// -------------укупкепк
+
+.adaptive-slider {
+  height: 85px;
+  width: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+
+  position: relative;
+}
+
+.adaptive-slider input[name='kadoves'] {
+  display: none;
+}
+
+.kadoves {
+  text-align: center;
+}
+
+.kadoves label {
+  display: inline-block;
+
+  width: 12px;
+
+  height: 12px;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+
+  border: 1px solid var(--switcher-grey);
+
+  background-color: var(--switcher-grey);
+}
+
+.kadoves label:not(:last-child) {
+  margin-right: 12px;
+}
+
+// #slide1:checked~.kadoves label[for="slide1"] {
+
+//   background-color: white;
+
+// }
+
+// #slide2:checked~.kadoves label[for="slide2"] {
+
+//   background-color: white;
+
+// }
+
+// #slide3:checked~.kadoves label[for="slide3"] {
+
+//   background-color: white;
+
+// }
+
+.adaptive-slider-imgs {
+  overflow: hidden;
+}
+
+.adaptive-slider-imgswr {
+  display: flex;
+
+  width: 100%;
+
+  transition: all 0.6s;
+}
+
+.adaptive-slider-imgswr img {
+  width: 100%;
+
+  flex-shrink: 0;
+}
+
+#slide1:checked ~ .adaptive-slider-imgs .adaptive-slider-imgswr {
+  transform: translate(0);
+}
+
+#slide2:checked ~ .adaptive-slider-imgs .adaptive-slider-imgswr {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .adaptive-slider-imgs .adaptive-slider-imgswr {
+  transform: translateX(-200%);
+}

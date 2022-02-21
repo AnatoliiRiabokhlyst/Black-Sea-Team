@@ -1,6 +1,24 @@
 <section class="reviews container">
   <div class="reviews-wrapper">
-    <picture>
+    <div class="adaptive-slider">
+      <input type="radio" name="kadoves" id="slide1" checked />
+
+      <input type="radio" name="kadoves" id="slide2" />
+
+      <input type="radio" name="kadoves" id="slide3" />
+
+      <div class="adaptive-slider-imgs">
+        <div class="adaptive-slider-imgswr">
+          <img src="../src/images/reviews/first-customer-1x.png" />
+
+          <img src="../src/images/reviews/second-customer-1x.png" />
+
+          <img src="../src/images/reviews/third-customer-1x.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- <picture class="customer-photo">
       <source
         srcset="
           ../src/images/reviews/first-customer-1x.png 1x,
@@ -8,13 +26,15 @@
         "
         type="image/png"
       />
-      <source srcset="" type="image/webp" />
-    </picture>
-    <img
-      class="customer-photo"
-      alt="customer-1"
-      src="../src/images/reviews/first-customer-1x.png"
-    />
+      <source
+        srcset="
+          ../src/images/reviews/first-customer-1x.webp 1x,
+          ../src/images/reviews/first-customer-2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <img alt="customer-1" src="../src/images/reviews/first-customer-1x.png" />
+    </picture> -->
 
     <div class="text-wrapper">
       <svg class="reviews-icon" width="54" height="40">
@@ -39,16 +59,20 @@
 
     <h2 class="review-address">Emily, Los Angeles</h2>
 
-    <ul class="switcher-list list">
-      <li class="switcher-item">
-        <a class="switcher-link"></a>
-      </li>
-      <li class="switcher-item">
-        <a class="switcher-link"></a>
-      </li>
-      <li class="switcher-item">
-        <a class="switcher-link"></a>
-      </li>
-    </ul>
+    <div class="adaptive-slider">
+      <input type="radio" name="kadoves" id="slide1" checked />
+
+      <input type="radio" name="kadoves" id="slide2" />
+
+      <input type="radio" name="kadoves" id="slide3" />
+
+      <div class="kadoves">
+        <label for="slide1"></label>
+
+        <label for="slide2"></label>
+
+        <label for="slide3"></label>
+      </div>
+    </div>
   </div>
 </section>
