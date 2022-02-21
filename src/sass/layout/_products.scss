@@ -255,3 +255,33 @@
     top: -230px;
   }
 }
+
+.home-icon {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 10;
+  opacity: 1;
+  animation: animate_fading 5s infinite;
+  animation-timing-function: linear;
+  &:hover {
+    animation: none;
+  }
+}
+@keyframes animate_fading {
+  0% {
+    opacity: 0.8;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
