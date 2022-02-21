@@ -75,5 +75,8 @@
             <symbol id="icon-person-black-18dp" viewBox="0 0 32 32">
                 <path d="M16 16c2.946 0 5.333-2.388 5.333-5.333s-2.388-5.333-5.333-5.333v0c-2.946 0-5.333 2.388-5.333 5.333s2.388 5.333 5.333 5.333v0zM16 18.667c-3.561 0-10.667 1.787-10.667 5.333v1.333c0 0.732 0.599 1.333 1.333 1.333h18.667c0.732 0 1.333-0.601 1.333-1.333v-1.333c0-3.547-7.108-5.333-10.667-5.333z"></path>
             </symbol>
+            <symbol id="icon-next-white" viewBox="0 0 26 32">
+                <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8"></path>
+            </symbol>
         </defs>
     </svg>
