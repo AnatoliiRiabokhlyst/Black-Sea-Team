@@ -10,18 +10,54 @@
   background-size: auto, 350px;
 
   background-image: url('../images/header/icecream-mob.svg'), url('../images/header/ellipse.svg');
+
   @include tab {
     padding: 37px 34px 34px 34px;
     background-image: url('../images/header/icecream-tab.svg'),
       url('../images/header/ellipse-tab.svg');
+
+    animation-name: circle;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6000ms;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    @keyframes circle {
+      0% {
+        background-size: auto, 200px;
+      }
+
+      50% {
+        background-size: auto, 350px;
+      }
+
+      100% {
+        background-size: auto, 200px;
+      }
+    }
   }
+
   @include desk {
     padding: 37px 115px 56px 46px;
     background-size: auto, 540px;
     background-image: url('../images/header/icecream-desk.svg'),
       url('../images/header/ellipse-desk.svg');
+
+    @keyframes circle {
+      0% {
+        background-size: auto, 250px;
+      }
+
+      50% {
+        background-size: auto, 550px;
+      }
+
+      100% {
+        background-size: auto, 250px;
+      }
+    }
   }
 }
+
 .header-container {
   position: relative;
 }
@@ -91,6 +127,10 @@
   background-color: var(--clear-white);
   border-radius: 22px;
   transition: background-color var(--transition);
+}
+
+.header-button-icon {
+  margin-left: 12px;
 }
 
 .menu-button {
@@ -211,6 +251,7 @@
   height: 16px;
   background-color: var(--clear-white);
   border-radius: 50%;
+
   @include desk {
     width: 30px;
     height: 30px;
@@ -220,6 +261,27 @@
   position: absolute;
   right: -5%;
   top: -2%;
+  animation-name: ellipseTop;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  @keyframes ellipseTop {
+    0% {
+      background-color: rgba(255, 255, 255, 0.1);
+      background-size: auto, 0;
+    }
+
+    50% {
+      background-color: rgba(255, 255, 255, 1);
+      background-size: auto, 100%;
+    }
+
+    100% {
+      background-color: rgba(255, 255, 255, 0.1);
+      background-size: auto, 0;
+    }
+  }
   @include desk {
     top: -3%;
   }
@@ -228,6 +290,27 @@
   position: absolute;
   top: 48px;
   right: -7%;
+  animation-name: ellipse;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  @keyframes ellipse {
+    0% {
+      background-color: rgba(255, 255, 255, 1);
+      background-size: auto, 0;
+    }
+
+    50% {
+      background-color: rgba(255, 255, 255, 0.1);
+      background-size: auto, 100%;
+    }
+
+    100% {
+      background-color: rgba(255, 255, 255, 1);
+      background-size: auto, 0;
+    }
+  }
   @include desk {
     top: 80px;
     right: -8%;
@@ -358,11 +441,33 @@
   position: absolute;
   bottom: 0;
   left: 2%;
+  animation-name: milkScale;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+
+  @keyframes milkScale {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 124px;
+    }
+  }
 
   @include desk {
     width: 188px;
     left: 5%;
     bottom: 0;
+    @keyframes milkScale {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 188px;
+      }
+    }
   }
 }
 .header-thumb-right {
@@ -373,9 +478,31 @@
   position: absolute;
   bottom: -34px;
   right: 1%;
+  animation-name: girlScale;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+
+  @keyframes girlScale {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 168px;
+    }
+  }
   @include desk {
     width: 293px;
     right: 1%;
     bottom: -56px;
+    @keyframes girlScale {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 293px;
+      }
+    }
   }
 }
