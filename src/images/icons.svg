@@ -9,6 +9,10 @@
             <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
             <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
         </symbol>
+        <symbol id="icon-mob-close" viewBox="0 0 32 32">
+            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
+            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
+        </symbol>
         <symbol id="icon-dots" viewBox="0 0 139 32">
             <path d="M85.333 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
             <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
@@ -69,6 +73,9 @@
         </symbol>
         <symbol id="icon-person-black-18dp" viewBox="0 0 32 32">
             <path d="M16 16c2.946 0 5.333-2.388 5.333-5.333s-2.388-5.333-5.333-5.333v0c-2.946 0-5.333 2.388-5.333 5.333s2.388 5.333 5.333 5.333v0zM16 18.667c-3.561 0-10.667 1.787-10.667 5.333v1.333c0 0.732 0.599 1.333 1.333 1.333h18.667c0.732 0 1.333-0.601 1.333-1.333v-1.333c0-3.547-7.108-5.333-10.667-5.333z"></path>
+        </symbol>
+        <symbol id="icon-email-black-18dp" viewBox="0 0 32 32">
+            <path d="M26.667 5.333h-21.333c-1.467 0-2.652 1.2-2.652 2.667l-0.014 16c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667v-16c0-1.467-1.2-2.667-2.667-2.667zM26.133 11.001l-9.426 5.892c-0.201 0.126-0.446 0.2-0.708 0.2s-0.506-0.075-0.713-0.204l0.006 0.003-9.426-5.892c-0.336-0.201-0.557-0.562-0.557-0.975 0-0.625 0.507-1.132 1.132-1.132 0.233 0 0.449 0.070 0.629 0.19l-0.004-0.003 8.933 5.586 8.933-5.588c0.176-0.118 0.392-0.188 0.624-0.188 0.625 0 1.132 0.507 1.132 1.132 0 0.413-0.221 0.775-0.552 0.972l-0.005 0.003z"></path>
         </symbol>
     </defs>
 </svg>
