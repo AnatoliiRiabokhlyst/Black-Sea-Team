@@ -1,14 +1,15 @@
+.foot {
+  background-color: var(--sections-light-pink-background);
+}
 .foot-container {
-    margin-top: 113px;
+   
     
     @include tab {
-        margin-top: 158px;
+        
         display: flex;
         justify-content: space-between;
     }
-    @include desk {
-        margin-top: 165px;
-    }
+    
 }
 .foot-text {
     width: 250px;

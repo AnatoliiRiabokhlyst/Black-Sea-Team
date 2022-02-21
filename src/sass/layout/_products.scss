@@ -41,6 +41,7 @@
   background-position: center;
   background-size: 249px 252px;
   text-align: center;
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/products/mob-pink-icecream@2x.png');
   }
@@ -150,6 +151,12 @@
   border: none;
   border-radius: 50%;
   background-color: var(--clear-white);
+  transition: background-color var(--transition), transform var(--transition);
+}
+.description-open-btn:hover,
+.description-open-btn:focus {
+  background-color: var(--sections-light-pink-background);
+  transform: scale(1.5);
 }
 .products {
   margin-top: 0;

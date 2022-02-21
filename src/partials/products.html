@@ -6,7 +6,7 @@
             <h3 class="products-title">ice cream</h3>
             <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 ut labore et</p>
-            <button type="button" class="description-open-btn" aria-expanded="false" aria-controls="menu-container">
+            <button type="button" class="description-open-btn" data-description-open>
                 <svg width="40px" height="40px">
                     <use href="./images/icons.svg#icon-rightarrow"></use>
                 </svg>
@@ -16,7 +16,7 @@
         <li class="card-set__item icecoffee-item products">
             <h3 class="products-title">ice coffee</h3>
         <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        <button type="button" class="description-open-btn" aria-expanded="false" aria-controls="menu-container">
+        <button type="button" class="description-open-btn" data-descriptionTwo-open>
             <svg width="40px" height="40px">
                 <use href="./images/icons.svg#icon-rightarrow"></use>
             </svg>
@@ -25,7 +25,7 @@
         <li class="card-set__item milkshakes-item products">
             <h3 class="products-title">milkshakes</h3>
             <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <button type="button" class="description-open-btn" aria-expanded="false" aria-controls="menu-container">
+            <button type="button" class="description-open-btn" data-descriptionThree-open>
                 <svg width="40px" height="40px">
                 <use href="./images/icons.svg#icon-rightarrow"></use>
                 </svg>
@@ -33,3 +33,57 @@
         </li>
     </ul>
 </section>
+<div class="backdrop-description is-hidden" data-description data-descriptionTwo data-descriptionThree>
+<div class="description">
+    <div class="description-logo">
+        <a href="" class="link logo">
+            <picture class="description-img">
+                <source srcset="./images/header/logo-1x.png 1x,
+        ./images/header/logo-2x.png 2x" type="image/png">
+                <source srcset="./images/header/logo-1x.webp 1x,
+        ./images/header/logo-2x.webp  2x" type="image/webp">
+                <img src="./images/header/logo-1x.png" class="header-logo" alt="Логотип">
+            </picture>
+        </a>
+    </div>
+<button type="button" class="description-close" data-description-close>
+<svg class="description-icon" width="18px" height="18px">
+<use href="./images/icons.svg#icon-mob-close"></use>
+</svg>
+</button>
+<p class="description-title">Leave your contact details and we will get back to you as soon as possible.</p>
+<form class="description-form">
+<div class="description-form-wrapper">
+<label class="description-label"><span class="description-label-text">Name</span>
+    <span class="input-wrap">
+        <input type="text" name="Name" class="form-input" placeholder="Enter your name!">
+        <svg class="input-icon" width="18" height="18">
+    <use href="./images/icons.svg#icon-person-black-18dp"></use>
+        </svg>
+    </span>
+</label>
+<label class="description-label"><span class="description-label-text">Phone number</span>
+    <span class="input-wrap">
+        <input type="tel" name="Tel" class="form-input" placeholder="Enter your phone number!">
+        <svg class="input-icon" width="18" height="18">
+    <use href="./images/icons.svg#icon-phone-black-18dp"></use>
+        </svg>
+    </span>
+</label>
+<label class="description-label"><span class="description-label-text">E-mail</span>
+    <span class="input-wrap">
+        <input type="email" name="Mail" class="form-input" placeholder="Enter your e-mail!">
+        <svg class="input-icon" width="18" height="18">
+            <use href="images/icons.svg#icon-email-black-18dp"></use>
+        </svg>
+    </span>
+</label>
+</div>
+<button type="submit" class="main-btn buy-now">Send
+    <svg class="injection" width="5" height="8">
+        <use href="./images/icons.svg#icon-next"></use>
+    </svg>
+</button>
+</form>
+</div>
+</div>

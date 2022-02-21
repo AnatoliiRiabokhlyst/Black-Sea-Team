@@ -1,0 +1,63 @@
+.backdropcontacts{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  top: 0;
+  transition: opacity 500ms, visibility 500ms;
+  &.hidden .modal-contacts {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+}
+.modal-contacts {
+  width: 100%;
+  border-radius: 15px;
+  background: linear-gradient(
+      to bottom,
+      var(--clear-white) 35%,
+      var(--text-grey) 35%
+    );;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 500ms;
+  padding: 30px;
+  border-radius: 16px;
+  @media screen and (max-width: 1090px) {
+  max-width: 450px;
+}
+}
+.contacts-maps{
+width: 100%;
+border: 300px;
+border-radius: 1%;
+}
+.backdropcontacts .modal-contacts {
+  transform: scale(0.5);
+}
+.modalcontacts-close {
+fill: var(--text-grey);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 2px solid var(--text-grey);
+  border-radius: 50%;
+  background-color: transparent;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+  outline: none;
+  transition: fill var(--transition-time) var(--transition-function);
+  &:hover,
+  &:focus {
+    fill: var(text-grey);
+  }
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
