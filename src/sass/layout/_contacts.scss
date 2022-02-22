@@ -34,10 +34,7 @@
         //   rgba(255, 245, 246, 0.5)
         // ),
      background-image: url('../images/contacts/bg-section-2x.png');
-    }
-  }
-}
-
+  } }
   &-list {
     --card-amt: 1;
     --card-gap: 20px;
@@ -59,10 +56,10 @@
     background: var(--clear-white);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-  @include tab {
+    @include tab {
       padding: 50px 0 50px 30px;
     }
-     @include desk {
+    @include desk {
       padding: 52px 48px 61px 49px;
     }
 
@@ -153,7 +150,9 @@
   &-timetable:not(:last-child) {
       margin-bottom: 10px;
     }
- 
+   .adress {
+    margin-top: 32px;
+  }
   &-adress-link {
     font-family: 'DM Sans';
     font-style: normal;
@@ -254,13 +253,12 @@
   cursor: pointer;
 }
 .icon-franhise {
-  fill:var(--main-red);
+  fill: var(--main-red);
   position: absolute;
   margin-left: 89px;
   align-items: center;
   text-align: center;
   justify-content: center;
-  
 }
  .adress {
     margin-top: 32px;

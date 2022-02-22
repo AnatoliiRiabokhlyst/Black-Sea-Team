@@ -89,7 +89,7 @@
   }
 }
 .nav-link {
-  @include font(null, 700, 1.31, null);
+  @include font(16px, 700, 21px, null);
   color: var(--clear-white);
   transition: color var(--transition);
   &:hover,
