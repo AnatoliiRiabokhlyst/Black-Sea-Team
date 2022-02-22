@@ -41,7 +41,7 @@
   background-position: center;
   background-size: 249px 252px;
   text-align: center;
-  animation: bounce 3s infinite;
+  animation: bounce-mob 3s infinite;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/products/mob-pink-icecream@2x.png');
   }
@@ -49,6 +49,7 @@
     width: 220px;
     height: 226px;
     background-size: 220px 226px;
+    animation: bounce 3s infinite;
     transform: translate(-50%, 58%);
     background-image: url('../images/products/tab-pink-icecream.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -80,7 +81,7 @@
   background-position: center;
   background-size: 249px 252px;
   text-align: center;
-  animation: bounce 3s infinite 1s;
+  animation: bounce-mob 3s infinite 1s;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/products/mob-coffee@2x.png');
   }
@@ -89,6 +90,7 @@
     height: 226px;
     transform: translate(-50%, 58%);
     background-size: 220px 226px;
+    animation: bounce 3s infinite 1s;
     background-image: url('../images/products/tab-coffee.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/products/tab-coffee@2x.png');
@@ -119,7 +121,7 @@
   background-position: center;
   background-size: 249px 252px;
   text-align: center;
-  animation: bounce 3s infinite 2s;
+  animation: bounce-mob 3s infinite 2s;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/products/mob-milkshake@2x.png');
   }
@@ -128,6 +130,7 @@
     height: 224px;
     transform: translate(-50%, 58%);
     background-size: 220px 224px;
+    animation: bounce 3s infinite 2s;
     background-image: url('../images/products/tab-milkshake.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/products/tab-milkshake@2x.png');
@@ -249,6 +252,28 @@
   }
   75% {
     top: -285px;
+    animation-timing-function: ease-in;
+  }
+  to {
+    top: -230px;
+  }
+}
+
+@keyframes bounce-mob {
+  from {
+    top: -230px;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    top: -250px;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    top: -230px;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    top: -255px;
     animation-timing-function: ease-in;
   }
   to {
