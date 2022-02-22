@@ -65,6 +65,7 @@
 .header-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-top {
@@ -105,7 +106,8 @@
   }
 }
 .button-container {
-  padding-top: 15px;
+  padding-top: 10px;
+  margin-left: auto;
   @include tab {
     padding-top: 0;
     display: flex;
@@ -225,7 +227,6 @@
 .wrap-item {
   &:nth-child(1) {
     .wrap-button {
-      margin-right: 8px;
       color: var(--clear-white);
       background: var(--main-red);
       &:hover,
@@ -234,6 +235,9 @@
       }
     }
   }
+}
+.wrap-item:not(:last-child) {
+  margin-right: 8px;
 }
 .header-wrap-right {
   @media screen and (max-width: 767px) {

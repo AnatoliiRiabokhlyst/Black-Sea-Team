@@ -15,14 +15,11 @@
   }
   @include tab {
     --card-amt: 3;
-    // --card-gap: 20px;
     padding-bottom: 115px;
     padding-left: 20px;
     padding-right: 20px;
   }
   @include desk {
-    // padding-top: 127px;
-    // padding-bottom: 120px;
     padding: 127px 35px 120px 35px;
     --card-gap: 25px;
   }
