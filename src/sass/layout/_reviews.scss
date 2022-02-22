@@ -1,29 +1,88 @@
 .reviews {
-  padding-top: 123px;
+  padding-top: 63px;
 }
 .text-wrapper {
   text-align: center;
   background-color: var(--customer-reviews-back);
   padding: 30px 30px;
   margin-bottom: 30px;
+  position: relative;
   @media screen and (min-width: 1200px) {
     margin-bottom: 15px;
   }
+  .img {
+    width: 85px;
+    height: 85px;
+  }
 }
+
+.customer-ph  {
+  
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  
+}
+
+.customer-photo  {
+  
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  
+}
+
 .review-text {
   line-height: 2.55;
-  display: inline;
-  background-repeat: no-repeat;
-  background-position: center bottom 1px;
-  background-size: 100% 1px;
-  background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
+  background-image: repeating-linear-gradient(0deg, var(--border-lines-grey) 0 1px, transparent 1px 31px);
   position: relative;
   z-index: 2;
-  max-width: 180px;
   color: var(--clear-black);
 }
+
+
+
+.review-slider {
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    button {
+      color: transparent;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+    li {
+      width: 12px;
+      height: 12px;
+      background-color: var(--border-lines-grey);
+      border-radius: 50%;
+      &:not(:last-child) {
+        margin-right: 18px;
+      }
+      &.slick-active {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0%;
+        background-image: url(../../dist/icons.2d421eb7.svg#icon-home);
+      }
+    }
+    
+  }
+}
+
+
+
 .reviews-icon {
   position: absolute;
+  top: 32px;
+  left: 50px;
   fill: currentColor;
   z-index: 1;
 }
