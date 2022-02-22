@@ -1,18 +1,44 @@
 .contacts {
   & {
-    @media screen and (max-width: 767px) {
+       padding: 132px 0 165px 0;
+       
+border: 1px solid #000000;
+box-sizing: border-box;
+      //  background-color: var(--sections-light-pink-background);
       background: linear-gradient(
         to bottom,
         var(--clear-white) 13%,
-        var(--sections-light-pink-background) 13%
-      );
+        var(--sections-light-pink-background) 13% );
+       @media screen and (min-width: 768px) {
+          background: linear-gradient(
+        to bottom,
+        var(--clear-white) 22%,
+        var(--sections-light-pink-background) 22% );
+       }
+    @media screen and (min-width: 1090px) {
+     background-image: linear-gradient(   
+        rgba(253, 167, 233, 0.3),
+        rgba(253, 167, 233, 0.3)
+        
+      ),
+
+    url(../images/contacts/bg-section-1x.png);
+ 
+    background-size: contain;
+    background-repeat: no-repeat;
+  background-position: top 250px  center;
+  @media (min-device-pixel-ratio: 2),
+  
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(  
+        rgba(243, 188, 231, 0.3),
+        rgba(243, 188, 231, 0.3)
+      ),
+ url(../images/contacts/bg-section-2x.png);
+}
     }
-    background: linear-gradient(
-      to bottom,
-      var(--clear-white) 25%,
-      var(--sections-light-pink-background) 25%
-    );
-    padding: 132px 0 165px 0;
+  
   }
 
   &-list {
@@ -130,9 +156,7 @@
   &-timetable:not(:last-child) {
       margin-bottom: 10px;
     }
-  .adress {
-    margin-top: 32px;
-  }
+ 
   &-adress-link {
     font-family: 'DM Sans';
     font-style: normal;
@@ -212,7 +236,7 @@
       margin-bottom: 0;
     }
     &:not(:last-child) {
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         margin-bottom: 10px;
       }
     }
@@ -241,3 +265,6 @@
   justify-content: center;
   
 }
+ .adress {
+    margin-top: 32px;
+  }
