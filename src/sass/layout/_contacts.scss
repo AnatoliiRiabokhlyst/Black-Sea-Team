@@ -2,8 +2,7 @@
   & {
        padding: 132px 0 165px 0;
        
-border: 1px solid #000000;
-box-sizing: border-box;
+
       //  background-color: var(--sections-light-pink-background);
       background: linear-gradient(
         to bottom,
@@ -28,6 +27,7 @@ box-sizing: border-box;
     background-repeat: no-repeat;
   background-position: top 250px  center;
   @media (min-device-pixel-ratio: 2),
+   (-webkit-min-device-pixel-ratio: 2),
   
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
