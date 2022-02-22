@@ -1,17 +1,16 @@
 .backdrop {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    position: fixed;
-    background-color: hsla(0, 0%, 0%, 0.2);
-    z-index: 1;
-    opacity: 1;
-    transition: opacity var(--transition), visibility var(--transition);
-  }
-  
-  .is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
-  
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  z-index: 15;
+  opacity: 1;
+  transition: opacity var(--transition), visibility var(--transition);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
