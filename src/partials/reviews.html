@@ -1,77 +1,116 @@
-<section class="reviews container">
-  <div class="reviews-wrapper">
-    <div class="adaptive-slider">
-      <input type="radio" name="kadoves" id="slide1" checked />
+<section class="reviews">
+  <div class="container">
+    <div class="review-slider">
+      <div class="reviews-wrapper">
+        <picture>
+          <source
+            class="customer-photo"
+            srcset="
+              ../src/images/reviews/first-customer-1x.png 1x,
+              ../src/images/reviews/first-customer-1x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            class="customer-photo"
+            srcset="
+              ../src/images/reviews/first-customer-1x.webp 1x,
+              ../src/images/reviews/first-customer-2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="customer-photo"
+            alt="customer-1"
+            src="../src/images/reviews/first-customer-1x.png"
+          />
+        </picture>
 
-      <input type="radio" name="kadoves" id="slide2" />
-
-      <input type="radio" name="kadoves" id="slide3" />
-
-      <div class="adaptive-slider-imgs">
-        <div class="adaptive-slider-imgswr">
-          <img src="../src/images/reviews/first-customer-1x.png" alt="face customer" />
-
-          <img src="../src/images/reviews/second-customer-1x.png" alt="face customer" />
-
-          <img src="../src/images/reviews/third-customer-1x.png" alt="face customer" />
+        <div class="text-wrapper">
+          <svg class="reviews-icon" width="54" height="40">
+            <use href="./images/icons.svg#icon-quotes"></use>
+          </svg>
+          <p class="review-text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
         </div>
+
+        <h2 class="review-address">Emily, Los Angeles</h2>
       </div>
-    </div>
+      <div class="reviews-wrapper">
+        <picture>
+          <source
+            class="customer-photo"
+            srcset="
+              ../src/images/reviews/second-customer-1x.png 1x,
+              ../src/images/reviews/second-customer-1x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            class="customer-photo"
+            srcset="
+              ../src/images/reviews/second-customer-1x.webp 1x,
+              ../src/images/reviews/second-customer-2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="customer-photo"
+            alt="customer-1"
+            src="../src/images/reviews/second-customer-1x.png"
+          />
+        </picture>
 
-    <!-- <picture class="customer-photo">
-      <source
-        srcset="
-          ../src/images/reviews/first-customer-1x.png 1x,
-          ../src/images/reviews/first-customer-1x.png 2x
-        "
-        type="image/png"
-      />
-      <source
-        srcset="
-          ../src/images/reviews/first-customer-1x.webp 1x,
-          ../src/images/reviews/first-customer-2x.webp 2x
-        "
-        type="image/webp"
-      />
-      <img alt="customer-1" src="../src/images/reviews/first-customer-1x.png" />
-    </picture> -->
+        <div class="text-wrapper">
+          <svg class="reviews-icon" width="54" height="40">
+            <use href="./images/icons.svg#icon-quotes"></use>
+          </svg>
+          <p class="review-text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
 
-    <div class="text-wrapper">
-      <svg class="reviews-icon" width="54" height="40">
-        <use href="./images/icons.svg#icon-quotes"></use>
-      </svg>
-      <p class="review-text">
-        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-        nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-      </p>
-    </div>
-    <ul class="dots-list list">
-      <li class="dots-item">
-        <a class="dots-link"></a>
-      </li>
-      <li class="dots-item">
-        <a class="dots-link"></a>
-      </li>
-      <li class="dots-item">
-        <a class="dots-link"></a>
-      </li>
-    </ul>
+        <h2 class="review-address">Ellen, Miami</h2>
+      </div>
+      <div class="reviews-wrapper">
+        <picture>
+          <source
+            class="customer-photo"
+            srcset="
+              ../src/images/reviews/third-customer-1x.png 1x,
+              ../src/images/reviews/third-customer-1x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            class="customer-photo"
+            srcset="
+              ../src/images/reviews/third-customer-1x.webp 1x,
+              ../src/images/reviews/third-customer-2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="customer-photo"
+            alt="customer-1"
+            src="../src/images/reviews/third-customer-1x.png"
+          />
+        </picture>
 
-    <h2 class="review-address">Emily, Los Angeles</h2>
+        <div class="text-wrapper">
+          <svg class="reviews-icon" width="54" height="40">
+            <use href="./images/icons.svg#icon-quotes"></use>
+          </svg>
+          <p class="review-text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
 
-    <div class="adaptive-slider">
-      <input type="radio" name="kadoves" id="slide4" checked />
-
-      <input type="radio" name="kadoves" id="slide5" />
-
-      <input type="radio" name="kadoves" id="slide6" />
-
-      <div class="kadoves">
-        <label for="slide1"></label>
-
-        <label for="slide2"></label>
-
-        <label for="slide3"></label>
+        <h2 class="review-address">Ann, Texas</h2>
       </div>
     </div>
   </div>
