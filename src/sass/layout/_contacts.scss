@@ -3,23 +3,7 @@
     width: auto;
     padding: 132px 0 165px 0;
     background-color: var(--sections-light-pink-background);
-    //     background: linear-gradient(
-    //     to bottom,
-    //     var(--clear-white) 13%,
-    //     var(--sections-light-pink-background) 13% );
-
-    // @media screen and (min-width: 767px) {
-    //       background: linear-gradient(
-    //     to bottom,
-    //     var(--clear-white) 25%,
-    //     var(--sections-light-pink-background) 25% );
-    //    }
-    @media screen and (min-width: 1090px) {
-      // background-image: linear-gradient(
-      //     rgba(255, 245, 246, 0.5),
-      //     rgba(255, 245, 246, 0.5)
-      //   ),
-      // background-color: var(--sections-light-pink-background);
+    @include desk {
       background-image: url('../images/contacts/bg-section-1x.png');
       background-size: contain;
       border: none;
@@ -27,10 +11,6 @@
       background-repeat: no-repeat;
       background-position: top 230px center;
       @media (min-device--picel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        //  background-image: linear-gradient(
-        //   rgba(255, 245, 246, 0.5),
-        //   rgba(255, 245, 246, 0.5)
-        // ),
         background-image: url('../images/contacts/bg-section-2x.png');
       }
     }
@@ -44,10 +24,8 @@
     @include tab {
       --card-amt: 3;
       --card-gap: 30px;
-      @media screen and (min-width: 768px) {
-        margin-bottom: 81px;
-      }
-      @media screen and (min-width: 1090px) {
+      margin-bottom: 81px;
+      @include desk {
         margin-bottom: 86px;
       }
     }
@@ -72,31 +50,30 @@
   }
 
   &-box:not(:last-child) {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       border-bottom: 1px solid var(--border-lines-grey);
-      padding-bottom: 25px;
-      margin-top: 25px;
+      margin-bottom: 25px;
     }
-    @media screen and (min-width: 768px) {
+    @include tab {
       border-bottom: 1px solid var(--border-lines-grey);
-      padding-bottom: 32px;
-      margin-top: 30px;
+      margin-bottom: 32px;
     }
   }
   &-cards-text {
     color: var(--clear-white);
     background-color: var(--light-brown-background);
     @media screen and (max-width: 767px) {
-      line-height: 1.5px;
       padding: 2px 25px;
+      margin-bottom: 25px;
     }
     line-height: 1.86;
     text-align: center;
     border-radius: 6px;
     border: none;
-    display: inline;
-    @media screen and (min-width: 768px) {
+    display: inline-block;
+    @include tab {
       padding: 2px 15px;
+      margin-bottom: 30px;
     }
   }
   &-location {
@@ -104,33 +81,34 @@
     color: var(--clear-black);
     display: flex;
   }
-
+  &-location {
+    margin-bottom: 10px;
+  }
   &-location-text {
     letter-spacing: 0 !important;
     font-weight: 500;
     display: block;
     line-height: 1.5;
     text-align: left;
-    @media screen and (min-width: 740px) {
+    @include tab {
       line-height: 1.64;
       letter-spacing: 0 !important;
     }
-    @media screen and (min-width: 1090px) {
+    @include desk {
       line-height: 1.83;
       letter-spacing: 0 !important;
     }
     color: var(--copyright-grey);
     width: auto;
-    margin-top: 10px;
   }
 
   &-timetable-text {
     line-height: 1.65;
-    @media screen and (min-width: 740px) {
+    @include tab {
       line-height: 1.64;
       letter-spacing: 0;
     }
-    @media screen and (min-width: 1090px) {
+    @include desk {
       line-height: 1.83;
     }
     color: var(--clear-black);
@@ -140,11 +118,11 @@
   &-timetable-time {
     color: #ffa5ba;
     line-height: 1.65;
-    @media screen and (min-width: 740px) {
+    @include tab {
       line-height: 1.64;
       letter-spacing: 0;
     }
-    @media screen and (min-width: 1090px) {
+    @include desk {
       line-height: 1.83;
     }
   }
@@ -159,10 +137,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1.65;
-    @media screen and (min-width: 740px) {
+    @include tab {
       line-height: 1.85;
     }
-    @media screen and (min-width: 1090px) {
+    @include desk {
       line-height: 1.83;
     }
     color: var(--copyright-grey);
@@ -179,7 +157,7 @@
     background: #d41342;
     border-radius: 22px;
     padding: 20px 35px 20px 17px;
-    @media screen and (min-width: 768px) {
+    @include tab {
       padding: 20px 54px 20px 35px;
     }
     cursor: pointer;
@@ -192,7 +170,7 @@
     }
   }
   &-btm-list {
-    @media screen and (min-width: 768px) {
+    @include tab {
       display: flex;
       justify-content: center;
       width: 100%;
@@ -209,7 +187,7 @@
     text-align: center;
     color: var(--main-red);
     padding: 20px 49px 20px 32px;
-    @media screen and (min-width: 768px) {
+    @include tab {
       padding: 20px 58px 20px 39px;
     }
     cursor: pointer;
@@ -225,7 +203,7 @@
   &-btm-item {
     display: flex;
     justify-content: center;
-    @media screen and (min-width: 768px) {
+    @include tab {
       display: flex;
       flex-wrap: wrap;
       margin-left: 15px;
@@ -239,7 +217,7 @@
     }
   }
   &-btm-item:not(:first-child) {
-    @media screen and (min-width: 768px) {
+    @include tab {
       margin-right: 15px;
     }
   }
