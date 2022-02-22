@@ -7,7 +7,7 @@
   padding: 30px 30px;
   margin-bottom: 30px;
   position: relative;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     margin-bottom: 15px;
   }
   .img {
@@ -16,35 +16,33 @@
   }
 }
 
-.customer-ph  {
-  
-    width: 85px;
-    height: 85px;
-    margin-left: auto;
+.customer-ph {
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  
 }
 
-.customer-photo  {
-  
-    width: 85px;
-    height: 85px;
-    margin-left: auto;
+.customer-photo {
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  
 }
 
 .review-text {
   line-height: 2.55;
-  background-image: repeating-linear-gradient(0deg, var(--border-lines-grey) 0 1px, transparent 1px 31px);
+  background-image: repeating-linear-gradient(
+    0deg,
+    var(--border-lines-grey) 0 1px,
+    transparent 1px 31px
+  );
   position: relative;
   z-index: 2;
   color: var(--clear-black);
 }
-
-
 
 .review-slider {
   .slick-dots {
@@ -70,14 +68,11 @@
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 0%;
-        background-image: url(../../dist/icons.2d421eb7.svg#icon-home);
+        background-image: url(../images/icons.svg#icon-home);
       }
     }
-    
   }
 }
-
-
 
 .reviews-icon {
   position: absolute;
