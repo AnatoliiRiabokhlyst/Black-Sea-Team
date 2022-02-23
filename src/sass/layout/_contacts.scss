@@ -15,21 +15,24 @@
       );
     }
     @include desk {
-       background-image: linear-gradient(
-      rgba(255,245,246, 0.5),
-      rgba(255,245,246, 0.5)
-    ),
-      url('../images/contacts/bg-section-1x.png');
+       background-image: 
+        url('../images/contacts/bg-section-1x.png'),
+       linear-gradient(
+      #FFF5F6,#FFF5F6
+    );
+     
       background-size: contain;
       border: none;
       background-repeat: no-repeat;
       background-position: top 230px center;
-      @media (min-device--picel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-         background-image: linear-gradient(
-      rgba(255,245,246, 0.5),
-      rgba(255,245,246, 0.5)
-    ),
-     url('../images/contacts/bg-section-2x.png');
+      @media (min-device--picel-ratio: 2),
+       (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image:
+          url('../images/contacts/bg-section-2x.png'),
+         linear-gradient(
+      #FFF5F6,#FFF5F6
+    );
+     
       }
     }
   }
