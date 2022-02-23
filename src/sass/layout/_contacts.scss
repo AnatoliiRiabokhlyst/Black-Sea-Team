@@ -4,25 +4,32 @@
     padding: 132px 0 83px 0;
     background: linear-gradient(
       to bottom,
-      var(--clear-white) 15%,
-      var(--sections-light-pink-background) 15%
+      var(--clear-white) 13%,
+      var(--sections-light-pink-background) 13%
     );
     @include tab {
       background: linear-gradient(
         to bottom,
-        var(--clear-white) 25%,
-        var(--sections-light-pink-background) 15%
+        var(--clear-white) 24%,
+        var(--sections-light-pink-background) 24%
       );
     }
     @include desk {
-      background-image: url('../images/contacts/bg-section-1x.png');
+       background-image: linear-gradient(
+      rgba(255,245,246, 0.5),
+      rgba(255,245,246, 0.5)
+    ),
+      url('../images/contacts/bg-section-1x.png');
       background-size: contain;
       border: none;
-      text-align: center;
       background-repeat: no-repeat;
       background-position: top 230px center;
       @media (min-device--picel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/contacts/bg-section-2x.png');
+         background-image: linear-gradient(
+      rgba(255,245,246, 0.5),
+      rgba(255,245,246, 0.5)
+    ),
+     url('../images/contacts/bg-section-2x.png');
       }
     }
   }
@@ -64,31 +71,47 @@
     @media screen and (max-width: 767px) {
       border-bottom: 1px solid var(--border-lines-grey);
       margin-bottom: 25px;
+    
     }
     @include tab {
       border-bottom: 1px solid var(--border-lines-grey);
-      margin-bottom: 32px;
+      margin-bottom: 30px;
     }
+     @include desk {
+      margin-bottom: 32px;
   }
+}
   &-cards-text {
+    border-radius: 6px;
+    border: none;
+    display: inline-block;
     color: var(--clear-white);
     background-color: var(--light-brown-background);
     @media screen and (max-width: 767px) {
       padding: 2px 25px;
       margin-bottom: 25px;
+      line-height:1.83;
     }
-    line-height: 1.8;
-    text-align: center;
-    border-radius: 6px;
-    border: none;
-    display: inline-block;
     @include tab {
-      padding: 2px 15px;
       margin-bottom: 30px;
+      padding: 2px 25px;
+       line-height: 1.86;
     }
+     @include desk {
+       margin-bottom: 32px;
+       padding: 2px 15px;
+       line-height: 1.88;
+     }
+
   }
   &-location {
-    line-height: 1.86;
+    line-height: 1.83;
+     @include tab {
+     line-height: 1.86;}
+       @include desk {
+      line-height: 1.88;
+       }
+
     color: var(--clear-black);
     display: flex;
   }
@@ -100,26 +123,30 @@
     display: block;
     line-height: 1.5;
     text-align: left;
+     margin-bottom: 25px;
     @include tab {
       line-height: 1.64;
       letter-spacing: 0;
+      margin-bottom: 30px;
     }
     @include desk {
       line-height: 1.83;
       letter-spacing: 0;
+      margin-bottom: 32px;
     }
     color: var(--copyright-grey);
     width: auto;
   }
 
   &-timetable-text {
-    line-height: 1.65;
+    line-height: 1.83;
+    letter-spacing: 0;
     @include tab {
-      line-height: 1.64;
+      line-height: 1.86;
       letter-spacing: 0;
     }
     @include desk {
-      line-height: 1.83;
+      line-height: 1.88;
     }
     color: var(--clear-black);
     display: flex;
@@ -127,18 +154,32 @@
 
   &-timetable-time {
     color: #ffa5ba;
-    line-height: 1.65;
+    line-height: 1.83;
+      letter-spacing: 0;
     @include tab {
-      line-height: 1.64;
+      line-height: 1.86;
       letter-spacing: 0;
     }
     @include desk {
-      line-height: 1.83;
+      line-height: 1.88;
+      letter-spacing: 0;
     }
   }
   &-timetable:not(:last-child) {
     margin-bottom: 10px;
   }
+  
+  &-timetable:last-child {
+    margin-bottom: 25px;
+     @include tab {
+     margin-bottom: 30px;
+  }
+    @include desk {
+      margin-bottom: 32px;
+    }
+  }
+
+
   .adress {
     margin-top: 32px;
   }
@@ -146,12 +187,12 @@
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
-    line-height: 1.65;
+    line-height: 1.5;
     @include tab {
       line-height: 1.85;
     }
     @include desk {
-      line-height: 1.83;
+      line-height: 1.81;
     }
     color: var(--copyright-grey);
   }
