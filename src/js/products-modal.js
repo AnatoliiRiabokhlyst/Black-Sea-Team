@@ -1,15 +1,17 @@
 (() => {
   const refs = {
-    openDescriptionBtn: document.querySelector("[data-description-open]"),
+    openDescriptionBtn: document.querySelectorAll("[data-description-open]"),
     closeDescriptionBtn: document.querySelector("[data-description-close]"),
-    Description: document.querySelector("[data-description]"),
+    description: document.querySelector("[data-description]"),
   };
 
-  refs.openDescriptionBtn.addEventListener("click", toggleDescription);
+  refs.openDescriptionBtn.forEach(btn=>{
+    btn.addEventListener("click", toggleDescription);
+  })
   refs.closeDescriptionBtn.addEventListener("click", toggleDescription);
 
   function toggleDescription() {
     document.body.classList.toggle("description-open");
-    refs.Description.classList.toggle("is-hidden");
+    refs.description.classList.toggle("is-hidden");
   }
 })();
