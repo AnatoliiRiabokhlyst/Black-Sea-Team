@@ -1,8 +1,19 @@
 .contacts {
   & {
     width: auto;
-    padding: 132px 0 165px 0;
-    background-color: var(--sections-light-pink-background);
+    padding: 132px 0 83px 0;
+    background: linear-gradient(
+      to bottom,
+      var(--clear-white) 15%,
+      var(--sections-light-pink-background) 15%
+    );
+    @include tab {
+      background: linear-gradient(
+        to bottom,
+        var(--clear-white) 25%,
+        var(--sections-light-pink-background) 15%
+      );
+    }
     @include desk {
       background-image: url('../images/contacts/bg-section-1x.png');
       background-size: contain;
@@ -85,18 +96,17 @@
     margin-bottom: 10px;
   }
   &-location-text {
-    letter-spacing: 0 !important;
     font-weight: 500;
     display: block;
     line-height: 1.5;
     text-align: left;
     @include tab {
       line-height: 1.64;
-      letter-spacing: 0 !important;
+      letter-spacing: 0;
     }
     @include desk {
       line-height: 1.83;
-      letter-spacing: 0 !important;
+      letter-spacing: 0;
     }
     color: var(--copyright-grey);
     width: auto;
@@ -173,6 +183,7 @@
     @include tab {
       display: flex;
       justify-content: center;
+      align-items: center;
       width: 100%;
     }
   }
@@ -206,9 +217,7 @@
     @include tab {
       display: flex;
       flex-wrap: wrap;
-      margin-left: 15px;
       position: relative;
-      margin-bottom: 0;
     }
     &:not(:last-child) {
       @media screen and (max-width: 767px) {
@@ -216,7 +225,7 @@
       }
     }
   }
-  &-btm-item:not(:first-child) {
+  &-btm-item:not(:last-child) {
     @include tab {
       margin-right: 15px;
     }

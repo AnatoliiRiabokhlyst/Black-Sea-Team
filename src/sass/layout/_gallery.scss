@@ -8,13 +8,18 @@
   @include tab {
     background: linear-gradient(
       to bottom,
+      var(--sections-light-pink-background) 60%,
+      var(--clear-white) 40%
+    );
+    padding: 140px 74px 63px 74px;
+  }
+  @include desk {
+    background: linear-gradient(
+      to bottom,
       var(--sections-light-pink-background) 40%,
       var(--clear-white) 40%
     );
-    padding: 140px 74px 0 74px;
-  }
-  @include desk {
-    padding: 160px 135px 0 135px;
+    padding: 160px 135px 63px 135px;
   }
 }
 .gallery-list {

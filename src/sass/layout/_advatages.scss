@@ -9,26 +9,10 @@
     padding-top: 40px;
   }
 }
-.advantages-list {
-  @include tab {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(var(--card-gap) * -1);
-    margin-top: calc(var(--card-gap) * -1);
-  }
-}
-.advantages-list:not(:last-child) {
-  @media screen and (max-width: 767px) {
-    --card-gap: 38px;
-  }
-}
 .advantages-item {
-  // width: 230px;
+  --card-gap: 38px;
   @include tab {
-    flex-basis: calc(100% / 3 - var(--card-gap));
-    margin-left: var(--card-gap);
-    margin-top: var(--card-gap);
-    width: 180px;
+    --card-amt: 3;
     padding-bottom: 0;
   }
   @include desk {
@@ -64,6 +48,7 @@
   width: 230px;
   @include tab {
     @include font(14px, null, 20px, null);
+    max-width: 180px;
   }
   @include desk {
     @include font(16px, null, 28px, 0.02em);

@@ -75,6 +75,9 @@
 .header-logo {
   width: 190px;
   height: 50px;
+  @include desk {
+    margin-right: 60px;
+  }
 }
 
 .logo {
@@ -84,7 +87,6 @@
 .nav-list {
   display: flex;
   align-items: center;
-
   @media screen and (max-width: 1279px) {
     display: none;
   }
@@ -341,13 +343,13 @@
 .point-count-top {
   position: absolute;
   right: 10%;
-  z-index: 999;
+  z-index: 10;
 }
 .point-count-bottom {
   position: absolute;
   top: 50px;
   right: 10%;
-  z-index: 998;
+  z-index: 10;
   @include desk {
     top: 85px;
   }
