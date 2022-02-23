@@ -18,7 +18,7 @@
   }
   @media screen and (min-width: 1280px) {
     background-image: url('../images/about/bg-milk-1x.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom -75px center;
     @media (min-device-pixel-ratio: 2),
@@ -131,6 +131,7 @@
   .about-text-wrapper {
     @include tab {
       flex-basis: 50%;
+      padding-top: 50px;
     }
   }
 }
